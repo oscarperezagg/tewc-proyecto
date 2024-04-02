@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LearnHub</title>
+    <link href="/public/css/bootstrap.css" rel="stylesheet" />
+    <meta name="theme-color" content="#4484FC" />
+    
+    <!-- Color de tema -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#4484FC" />
+    <!-- Color de la barra de estado en iOS -->
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-primary rounded-nav"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="/index.html">LEARNHUB</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/universidad.html">University</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/certification.html"
+                >Certifications</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/topics.html"
+                >Topics</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true" href="/requests.html"
+                >Requests</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2 rounded-pill"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              data-bs-theme="light"
+            />
+
+            <button class="btn btn-outline-light rounded-pill" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div id="root">
+      <div class="card home-card">
+        <div class="card-body">
+          <h1><span id="home-title"></span></h1>
+          <div id="banner-content">
+            <div class="card card-animation">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  Card subtitle
+                </h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+            <div class="card card-animation">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  Card subtitle
+                </h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+            <div class="card card-animation">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  Card subtitle
+                </h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+            <div class="card card-animation">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  Card subtitle
+                </h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <div class="moreContent2">
+          <h2>Pass your university exams</h2>
+          <p>
+            Make use of the community decks to learn effectively and thus be
+            able to ace all university exams, while also beginning to become an
+            expert in the subject.
+          </p>
+          <button class="btn rounded-pill">University</button>
+        </div>
+        <div class="card card2">
+          <div class="card-body">
+            <img src="uni.webp" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <div class="card">
+          <div class="card-body">
+            <img src="certi.webp" alt="" />
+          </div>
+        </div>
+        <div class="moreContent">
+          <h2>Pass your certification exams</h2>
+          <p>
+            Make use of learning decks to master knowledge about the world's
+            most renowned certifications, thus advancing to the next level in
+            your professional career.
+          </p>
+          <button class="btn rounded-pill">Certifications</button>
+        </div>
+      </div>
+      <footer class="card fotter-card">
+        <div class="card-body">
+        <p>Óscar Pérez Arruti - 2024/25 </p>
+        </div>
+      </foter>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Load library from the CDN -->
+    <!-- <script src="router.js"></script> -->
+    <!-- Setup and start animation! -->
+
+    <script>
+      // Crear una función para manejar la mutación del DOM
+      var typed = new Typed("#home-title", {
+        strings: ["Learn new Skills. Prove your potential"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
