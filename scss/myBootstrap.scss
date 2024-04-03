@@ -453,4 +453,18 @@ p {
       }
     }
   }
+
+  .menu {
+    display: flex;
+    justify-content: space-between; // Alinea los elementos al inicio y al final del contenedor
+
+    h1 {
+      margin: 0; // Elimina el margen del encabezado h1
+    }
+
+    .btn {
+      margin-left: 10px; // Añade un margen izquierdo para separar el botón del texto
+      border-radius: 2em;
+    }
+  }
 }

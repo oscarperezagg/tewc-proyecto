@@ -6,6 +6,7 @@ function handleClick(event) {
 
   if (id === "modalLoginButton") auth();
   else if (id === "logOutButton") logout();
+  else if (id === "modalRequestButton") addRequest();
 }
 
 // Función que se ejecuta cuando el documento está cargado
@@ -104,5 +105,50 @@ const logout = () => {
   // Quitar el atributo hidden a loginButton
   if (loginButton) {
     loginButton.removeAttribute("hidden");
+  }
+};
+
+const addRequest = () => {
+  // Intentar obtener las solicitudes del localStorage
+  var solicitudesLocalStorage = JSON.parse(localStorage.getItem("solicitudes"));
+
+  if (!solicitudesLocalStorage) {
+    // Si las solicitudes no están disponibles en el localStorage, obtenerlas del archivo JSON
+    $.getJSON("/modelos/requests.json", function (data) {
+      solicitudesLocalStorage = data || [];
+      agregarSolicitud(solicitudesLocalStorage);
+    });
+  } else {
+    // Si las solicitudes están disponibles en el localStorage, agregar la nueva solicitud
+    agregarSolicitud(solicitudesLocalStorage);
+  }
+
+  function agregarSolicitud(solicitudes) {
+    // Obtener los valores de los campos
+    var shortDescription = document.getElementById("short_description").value;
+    var description = document.getElementById("description").value;
+    var user = document.getElementById("user").value;
+    var fecha = new Date().toISOString().slice(0, 10); // Obtener la fecha actual en formato YYYY-MM-DD
+    var estado = "Pending"; // Estado por defecto
+
+    // Crear el diccionario con los valores obtenidos
+    var solicitud = {
+      usuario: user,
+      tema: shortDescription,
+      solicitud: description,
+      fecha: fecha,
+      estado: estado,
+    };
+
+    // Agregar la nueva solicitud al array de solicitudes
+    solicitudes.push(solicitud);
+
+    // Guardar el array actualizado en localStorage
+    localStorage.setItem("solicitudes", JSON.stringify(solicitudes));
+
+    // Aquí puedes hacer lo que necesites con la solicitud, como enviarla a un servidor, procesarla, etc.
+    console.log("Solicitud añadida:", solicitud);
+
+    location.reload();
   }
 };

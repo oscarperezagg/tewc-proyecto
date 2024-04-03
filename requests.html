@@ -85,6 +85,84 @@
       </div>
     </div>
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="newRequest"
+      tabindex="-1"
+      aria-labelledby="loginLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered myModal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="newRequestLabel">
+              Add new request
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <label for="short_description" class="form-label">Topic</label>
+            <input
+              type="text"
+              class="form-control mb-4"
+              placeholder="Short description"
+              aria-label="Short Description"
+              id="short_description"
+              name="short_description"
+              required
+            />
+            <label for="description" class="form-label">Description</label>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="description"
+                style="height: 200px; width: 100%"
+                required
+              ></textarea>
+            </div>
+            <label for="user" class="form-label mt-4">User</label>
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon2">@</span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="oscarperezagg"
+                aria-label="user"
+                id="user"
+                name="user"
+                required
+                aria-describedby="basic-addon2"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-danger rounded-pill"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              id="modalRequestButton"
+              type="button"
+              class="btn btn-primary rounded-pill"
+              data-bs-dismiss="modal"
+            >
+              Add
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <nav
       class="navbar navbar-expand-lg bg-primary rounded-nav"
       data-bs-theme="dark"
@@ -164,10 +242,20 @@
     <div id="root">
       <div class="card requests mb-4">
         <div class="card-body">
-          <div></div>
-          <h1 class="mb-5">Requests board</h1>
+          <div class="menu">
+            <h1 class="mb-5">Requests board</h1>
+            <div>
+              <button
+                class="btn btn-outline-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#newRequest"
+              >
+                New request
+              </button>
+            </div>
+          </div>
           <table
-            data-order='[[ 2, "desc" ]]'
+            data-order='[[ 3, "desc" ]]'
             data-page-length="25"
             id="tabla-peticiones"
             class="table table-striped table-hover"
@@ -188,8 +276,25 @@
 
       <script>
         $(document).ready(function () {
-          // Hacer una solicitud AJAX para obtener los datos del archivo JSON
-          $.getJSON("/modelos/requests.json", function (data) {
+          // Intentar obtener las solicitudes del almacenamiento local
+          var solicitudesLocalStorage = JSON.parse(
+            localStorage.getItem("solicitudes")
+          );
+
+          // Si las solicitudes están disponibles en el almacenamiento local, usarlas
+          if (solicitudesLocalStorage) {
+            mostrarSolicitudes(solicitudesLocalStorage);
+          } else {
+            // Si las solicitudes no están disponibles en el almacenamiento local, hacer una solicitud AJAX
+            $.getJSON("/modelos/requests.json", function (data) {
+              mostrarSolicitudes(data);
+
+              // Guardar las solicitudes en el almacenamiento local para su uso futuro
+              localStorage.setItem("solicitudes", JSON.stringify(data));
+            });
+          }
+
+          function mostrarSolicitudes(data) {
             // Iterar sobre cada objeto en el arreglo de datos
             $.each(data, function (index, peticion) {
               // Crear una nueva fila de la tabla y agregar los datos de la petición
@@ -230,7 +335,17 @@
               scrollY: 600,
               select: true,
             });
-          });
+          }
+        });
+      </script>
+      <script>
+        $(document).ready(function () {
+          // Verificar si hay un usuario almacenado en el localStorage
+          var user = localStorage.getItem("user");
+          if (user) {
+            // Si hay un usuario almacenado, actualizar el valor del campo de entrada
+            $("#user").val(user);
+          }
         });
       </script>
     </div>

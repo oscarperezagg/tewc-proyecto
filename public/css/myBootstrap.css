@@ -430,4 +430,15 @@ p {
 }
 .requests .pagination li:last-child a {
   border-radius: 0 2em 2em 0 !important;
+}
+.requests .menu {
+  display: flex;
+  justify-content: space-between;
+}
+.requests .menu h1 {
+  margin: 0;
+}
+.requests .menu .btn {
+  margin-left: 10px;
+  border-radius: 2em;
 }/*# sourceMappingURL=myBootstrap.css.map */
