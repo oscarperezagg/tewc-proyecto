@@ -75,6 +75,16 @@ const login = () => {
       // Si se encontró el botón de inicio de sesión, eliminarlo
       loginButton.setAttribute("hidden", true);
     }
+    // Buscar el elemento con ID "user"
+    var userInput = document.getElementById("user");
+
+    // Verificar si se encontró un elemento con ID "user"
+    if (userInput) {
+      userInput.value = user;
+
+      // Agregar el atributo "readonly"
+      userInput.setAttribute("readonly", "readonly");
+    }
   }
 };
 
