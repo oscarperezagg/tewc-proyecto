@@ -1,77 +1,22 @@
-@font-face {
-  font-family: "Geist-Regular";
-  src: url("../fonts/Geist-Regular.woff") format("woff"),
-    url("../fonts/Geist-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Geist-Bold";
-  src: url("../fonts/Geist-Bold.woff") format("woff"),
-    url("../fonts/Geist-Bold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Geist-Light";
-  src: url("../fonts/Geist-Light.woff") format("woff"),
-    url("../fonts/Geist-Light.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Geist-Medium";
-  src: url("../fonts/Geist-Medium.woff") format("woff"),
-    url("../fonts/Geist-Medium.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Geist-SemiBold";
-  src: url("../fonts/Geist-SemiBold.woff") format("woff"),
-    url("../fonts/Geist-SemiBold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Geist-Thin";
-  src: url("../fonts/Geist-Thin.woff") format("woff"),
-    url("../fonts/Geist-Thin.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Geist-UltraBlack";
-  src: url("../fonts/Geist-UltraBlack.woff") format("woff"),
-    url("../fonts/Geist-UltraBlack.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Geist-UltraLight";
-  src: url("../fonts/Geist-UltraLight.woff") format("woff"),
-    url("../fonts/Geist-UltraLight.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
+@import "fonts";
 
 $box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+$box-shift-shadow: 4px 0 3px rgba(0, 0, 0, 0.4);
 $blue-gradient: linear-gradient(
   to bottom right,
-  rgb(79, 140, 255),
+  rgb(83, 143, 255, 0.8),
   rgb(43, 115, 248)
 );
+$test: linear-gradient(to right, rgb(134, 175, 251, 0.75), rgb(43, 115, 248));
 $blue-img-gradient: linear-gradient(
   to bottom right,
-  rgba(170, 198, 249, 0.1),
-  rgb(43, 115, 248, 0.3)
+  rgba(255, 255, 255, 0.1),
+  rgba(43, 115, 248, 0.1)
+);
+$blue-ligth-gradient: linear-gradient(
+  to bottom right,
+  rgba(159, 193, 255),
+  rgb(68, 134, 255)
 );
 body {
   font-family: "Geist-Regular", sans-serif;
@@ -97,12 +42,15 @@ p {
   margin: 0 2em;
   margin-top: 2em;
   border-radius: 50em;
-  background-image: $blue-gradient;
+  background-image: $test;
   box-shadow: $box-shadow;
 
-  @media screen and (max-width: 992px) {
-    margin: 0 2em;
-    margin-top: 2em;
+  @media (max-width: 576px) {
+    margin: 0 1.1em;
+    margin-top: 1em;
+  }
+
+  @media (max-width: 768px) {
     border-radius: 2em;
   }
 }
@@ -110,6 +58,11 @@ p {
 #root {
   padding-top: 2em;
   margin: 0 2em;
+
+  @media (max-width: 576px) {
+    padding-top: 2em;
+    margin: 0 1.1em;
+  }
 
   .card {
     border-radius: 2.5em;
@@ -131,13 +84,30 @@ p {
     #banner-content {
       margin-top: 2em;
       display: flex;
+      justify-content: space-between;
       gap: 2em;
       overflow-y: auto; /* Agrega desplazamiento vertical automáticamente cuando sea necesario */
       scrollbar-width: none; /* Oculta las barras de desplazamiento en navegadores que la admiten */
 
       .card {
+        margin: 0.3em;
         min-width: 18rem;
-        height: 22rem;
+        height: 18rem;
+        box-shadow: $box-shift-shadow;
+      }
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 9rem;
+          margin-bottom: 1rem;
+        }
+        h5 {
+          font-family: "Geist-Regular", sans-serif; /* Usar la fuente 'Geist-Bold' */
+          font-weight: bold; /* Establecer el peso de la fuente como negrita */
+        }
       }
     }
   }
@@ -181,11 +151,39 @@ p {
 
   margin-top: 8em;
   margin-bottom: 8em;
-  padding: 0 4em;
+  padding: 0 5em;
+
+  @media screen and (max-width: 1400px) {
+    margin: 0 10em;
+
+    margin-top: 8em;
+    margin-bottom: 8em;
+  }
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+    padding: 2em;
+    margin-bottom: 2em;
+    grid-gap: 3em;
+  }
+
+  @media (max-width: 992px) {
+    margin: 0;
+    padding: 0;
+    margin: 3em 0;
+  }
 
   .card {
     width: 25rem;
     height: 25rem;
+
+    @media screen and (max-width: 576px) {
+      width: 15rem;
+      height: 15rem;
+    }
+
     margin: 0 !important;
     padding: 0 !important;
     justify-self: center; /* Alinea el elemento a la derecha horizontalmente */
@@ -202,9 +200,6 @@ p {
         padding: 0;
       }
     }
-  }
-  .moreContent2 {
-    text-align: left;
   }
 
   h2 {
@@ -234,9 +229,9 @@ p {
     position: absolute;
     top: 0;
     left: 0;
+    background-image: $blue-img-gradient;
     width: 100%;
     height: 100%;
-    background: $blue-img-gradient; /* Modifica los valores de rgba según tus preferencias */
     z-index: 1;
   }
 
@@ -250,11 +245,81 @@ p {
   .card-body {
     position: relative;
   }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.what_we_do {
+  padding: 0 4em;
+  margin-bottom: 4em;
+
+  @media screen and (max-width: 1400px) {
+    margin: 0 8em;
+
+    margin-bottom: 6em;
+  }
+
+  @media (max-width: 1200px) {
+    margin: 0;
+    padding: 2em;
+    margin-bottom: 2em;
+  }
+  @media (max-width: 576px) {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2em;
+  }
+
+  h3 {
+    font-family: "Geist-Bold", sans-serif; /* Usar la fuente 'Geist-Bold' */
+    font-size: 3em;
+    font-weight: bold; /* Establecer el peso de la fuente como negrita */
+    margin-bottom: 0.5em;
+  }
+  h5 {
+    font-family: "Geist-Regultar", sans-serif; /* Usar la fuente 'Geist-Bold' */
+    font-size: 1.8em;
+    font-weight: 600; /* Establecer el peso de la fuente como negrita */
+    margin-bottom: 0.5em;
+  }
+  h6 {
+    font-family: "Geist-Regultar", sans-serif; /* Usar la fuente 'Geist-Bold' */
+    font-size: 1.1em;
+    font-weight: 550; /* Establecer el peso de la fuente como negrita */
+    margin-bottom: 0.5em;
+  }
+  p {
+    font-family: "Geist-Regular", sans-serif; /* Usar la fuente 'Geist-Bold' */
+    font-weight: lighter; /* Establecer el peso de la fuente como negrita */
+    margin-bottom: 1em;
+    text-align: justify;
+  }
+
+  .grid_what {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
+    gap: 1em; /* Espacio entre los elementos */
+
+    .card {
+      flex: 1 0 30%; /* Establece el tamaño de cada elemento */
+      min-height: 18em;
+      box-shadow: $box-shadow;
+
+      @media (max-width: 992px) {
+        flex: 1 0 100%; /* Cambia el tamaño de los elementos a ocupar el 100% del ancho */
+        min-height: fit-content;
+      }
+    }
+  }
 }
 
 .fotter-card {
   min-height: fit-content;
   box-shadow: $box-shadow;
+  border-radius: 1.8em !important;
   background-image: $blue-gradient;
   border-color: transparent;
   margin-bottom: 2em;
@@ -267,5 +332,20 @@ p {
   p {
     font-family: "Geist-Regular", sans-serif; /* Usar la fuente 'Geist-Bold' */
     font-weight: lighter; /* Establecer el peso de la fuente como negrita */
+  }
+}
+
+@media (max-width: 1200px) {
+  .two {
+    display: flex;
+    flex-direction: column;
+    .card {
+      order: 2; /* Cambiar el orden de aparición */
+      align-self: center;
+    }
+
+    .moreContent {
+      order: 1; /* Cambiar el orden de aparición */
+    }
   }
 }
