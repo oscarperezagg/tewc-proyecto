@@ -1,6 +1,7 @@
+let countdownWorker = undefined;
 const pomodoroSet = {
   status: "first",
-  time: 25,
+  time: 1,
   break: 5,
   round: 3,
   completed: 0,
@@ -72,12 +73,19 @@ const runner = () => {
     sessionStorage.setItem("pomodoro", JSON.stringify(pomodoroData));
     const startButton = document.getElementById("startButton");
     startButton.innerHTML = "RUN";
+
+    // Si está corriendo paramos
+    // Enviar mensaje para pausar el countdown
+    countdownWorker.postMessage({ action: "pause" });
   } else if (pomodoroData.status === "paused") {
     // Cambiar el estado a "paused"
     pomodoroData.status = "run";
     sessionStorage.setItem("pomodoro", JSON.stringify(pomodoroData));
     const startButton = document.getElementById("startButton");
     startButton.innerHTML = "PAUSED";
+
+    // Si está pausado resumimos
+    countdownWorker.postMessage({ action: "resume" });
   } else {
     // Cambiar el estado a "paused"
     pomodoroData.status = "run";
@@ -85,17 +93,20 @@ const runner = () => {
     const startButton = document.getElementById("startButton");
     startButton.innerHTML = "PAUSED";
     // Ejemplo de uso:
-    countdown(
-      time,
-      // Función de actualización, se llama cada segundo con el tiempo restante
-      function (time) {
+
+    // Crear un Web Worker
+    countdownWorker = new Worker("/public/js/pomodoroWorkers.js");
+
+    // Iniciar el countdown
+    countdownWorker.postMessage({ action: "run", minutes: time });
+
+    // Escuchar mensajes del worker
+    countdownWorker.onmessage = function (e) {
+      if (e.data.type === "update") {
         const span = document.getElementById("time");
-        span.innerHTML = time;
-        // Aquí puedes actualizar la UI con el tiempo restante
-      },
-      // Función de finalización, se llama cuando el countdown llega a cero
-      function () {
-        // Actualizar el estado a "finish"
+        document.title = `LearnHub (${e.data.time})`;
+        span.innerHTML = e.data.time;
+      } else if (e.data.type === "finish") {
         const pomodoroData = JSON.parse(sessionStorage.getItem("pomodoro"));
         pomodoroData.completed += 1;
         pomodoroData.status = "finish";
@@ -117,53 +128,7 @@ const runner = () => {
           startButton.innerHTML = "RESTART";
           sessionStorage.removeItem("pomodoro");
         }
-        // Aquí puedes ejecutar cualquier acción necesaria al finalizar el countdown
       }
-    );
+    };
   }
 };
-
-function countdown(minutes, updateCallback, finishCallback) {
-  let seconds = minutes * 60 - 1;
-  let paused = false; // Variable para controlar si el countdown está pausado
-
-  const intervalId = setInterval(() => {
-    // Verificar si el elemento "pomodoro" existe en el sessionStorage
-    if (sessionStorage.getItem("pomodoro")) {
-      // Obtener el objeto "pomodoro" del sessionStorage y convertirlo a objeto
-      const pomodoroData = JSON.parse(sessionStorage.getItem("pomodoro"));
-
-      // Verificar si el objeto tiene la clave "status" y si es "paused"
-      if ("status" in pomodoroData && pomodoroData.status === "paused") {
-        paused = true; // Marcar el countdown como pausado
-        return;
-      } else {
-        paused = false;
-      }
-    }
-
-    if (paused) {
-      // Si el countdown está pausado, no hacer nada
-      return;
-    }
-
-    // Calcular minutos y segundos restantes
-    const mins = Math.floor(seconds / 60);
-    let secs = seconds % 60;
-
-    // Agregar un cero delante de los segundos si es necesario
-    secs = secs < 10 ? "0" + secs : secs;
-
-    // Llamar a la función de actualización con el tiempo restante
-    updateCallback(mins + ":" + secs);
-
-    // Reducir el contador de segundos
-    seconds--;
-
-    // Si el contador llega a cero, llamar a la función de finalización, actualizar el estado a "finish" y limpiar el intervalo
-    if (seconds < 0) {
-      clearInterval(intervalId);
-      finishCallback();
-    }
-  }, 1000);
-}
