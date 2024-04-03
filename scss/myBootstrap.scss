@@ -549,3 +549,42 @@ p {
     }
   }
 }
+
+.pomodoro {
+  display: flex;
+  justify-content: center;
+
+  .card {
+    width: 45em;
+    height: 40em;
+    background-image: $blue-gradient;
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      align-items: center;
+      color: white;
+      justify-content: space-around;
+
+      #status {
+        font-family: "Geist-Bold", sans-serif; /* Usar la fuente 'Geist-Bold' */
+        font-size: 1em;
+        font-weight: lighter; /* Establecer el peso de la fuente como negrita */
+        border: #ffffff solid;
+        padding: 0.6em 1em;
+      }
+
+      #time {
+        font-family: "Geist-Bold", sans-serif; /* Usar la fuente 'Geist-Bold' */
+        font-size: 10em;
+        font-weight: lighter; /* Establecer el peso de la fuente como negrita */
+      }
+
+      button {
+        width: 17em;
+        height: 6em;
+        border-radius: 3em;
+      }
+    }
+  }
+}

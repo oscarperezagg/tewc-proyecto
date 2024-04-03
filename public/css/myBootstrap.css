@@ -507,4 +507,39 @@ p {
   width: 3em;
   height: 3em;
   border-radius: 0.6em;
+}
+
+.pomodoro {
+  display: flex;
+  justify-content: center;
+}
+.pomodoro .card {
+  width: 45em;
+  height: 40em;
+  background-image: linear-gradient(to bottom right, rgba(83, 143, 255, 0.8), rgb(43, 115, 248));
+}
+.pomodoro .card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  color: white;
+  justify-content: space-around;
+}
+.pomodoro .card .card-body #status {
+  font-family: "Geist-Bold", sans-serif; /* Usar la fuente 'Geist-Bold' */
+  font-size: 1em;
+  font-weight: lighter; /* Establecer el peso de la fuente como negrita */
+  border: #ffffff solid;
+  padding: 0.6em 1em;
+}
+.pomodoro .card .card-body #time {
+  font-family: "Geist-Bold", sans-serif; /* Usar la fuente 'Geist-Bold' */
+  font-size: 10em;
+  font-weight: lighter; /* Establecer el peso de la fuente como negrita */
+}
+.pomodoro .card .card-body button {
+  width: 17em;
+  height: 6em;
+  border-radius: 3em;
 }/*# sourceMappingURL=myBootstrap.css.map */

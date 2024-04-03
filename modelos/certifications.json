@@ -1,5 +1,15 @@
 [
   {
+    "nombre": "EC-Council",
+    "fields": "EC-Council es una empresa de certificación, educación, capacitación y servicios de seguridad cibernética con sede en Albuquerque, Nuevo México",
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5JTklnsMOF2F-f0Rka1Mnl0v-TBQozJu5PYOxY8_G4g&s"
+  },
+  {
+    "nombre": "Fortinet",
+    "fields": "Certificaciones en Seguridad de Red y Sistemas de Seguridad",
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_SbsZWNVQ5-zqkdqhK_i2bskh6SqXx3qOvOJmCQFQuQ&s"
+  },
+  {
     "nombre": "Microsoft",
     "fields": "Certificaciones en Tecnología",
     "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQomToXdaITnDNh_gfzvynzTWnrpkleOrZpsdIOTAYPWA&s"
@@ -70,11 +80,7 @@
     "fields": "Certificaciones en Seguridad de Red y Firewall",
     "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlwNqVI2OGFyqXO2sBWYPRuI8FL0Bs8YGoTjtI3CF9nA&s"
   },
-  {
-    "nombre": "Fortinet",
-    "fields": "Certificaciones en Seguridad de Red y Sistemas de Seguridad",
-    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_SbsZWNVQ5-zqkdqhK_i2bskh6SqXx3qOvOJmCQFQuQ&s"
-  },
+
   {
     "nombre": "Docker",
     "fields": "Certificaciones en Contenedores y Despliegue de Aplicaciones",
@@ -94,10 +100,5 @@
     "nombre": "Splunk",
     "fields": "Certificaciones en Análisis de Datos y Plataformas de Seguridad",
     "url": "https://www.ucyfer.com/wp-content/uploads/2023/01/logo-splunk.jpeg"
-  },
-  {
-    "nombre": "EC-Council",
-    "fields": "EC-Council es una empresa de certificación, educación, capacitación y servicios de seguridad cibernética con sede en Albuquerque, Nuevo México",
-    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5JTklnsMOF2F-f0Rka1Mnl0v-TBQozJu5PYOxY8_G4g&s"
   }
 ]

@@ -77,7 +77,6 @@ async function loadHTMLContent(html) {
   }
 }
 
-
 // Función para cargar la información de una universidad específica
 async function loadUniversity(id) {
   // URL del archivo JSON
@@ -110,7 +109,6 @@ async function loadUniversity(id) {
   }
 }
 
-
 // Función para manejar el evento de clic en los botones
 async function uniLoader(button) {
   // Obtener el ID del elemento que disparó el evento
@@ -120,7 +118,16 @@ async function uniLoader(button) {
   const partes = id.split("-");
 
   // Cargar la información de la universidad seleccionada
-  const html = await loadUniversity(partes[1]);
+  const idNumber = parseInt(partes[1]);
+
+  const html = await loadUniversity(idNumber);
+
+  // Temporal
+  if (idNumber !== 0) {
+    await loadError();
+    return;
+  }
+
   // Cargar el contenido HTML de la página
   await loadHTMLContent(html);
 }
@@ -141,3 +148,24 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   });
 });
+
+// Función para cargar la información de las universidades
+async function loadError() {
+  // Ruta del archivo HTML a cargar
+  const filePath = "templates/error.html";
+  try {
+    // Usar fetch para obtener el contenido del archivo HTML
+    const response = await fetch(filePath);
+    if (!response.ok) {
+      throw new Error("Error al cargar el archivo HTML");
+    }
+    // Convertir la respuesta a texto
+    const htmlContent = await response.text();
+    // Insertar el contenido del archivo HTML en el elemento <div> con el ID "root"
+    const rootDiv = document.getElementById("root");
+    rootDiv.innerHTML = formatString(htmlContent);
+  } catch (error) {
+    // Manejar cualquier error que ocurra durante la carga del archivo HTML
+    console.error("Error:", error);
+  }
+}
