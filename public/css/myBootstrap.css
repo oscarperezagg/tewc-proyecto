@@ -325,7 +325,7 @@ p {
 .what_we_do .grid_what .card {
   flex: 1 0 30%;
   min-height: 18em;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 6px rgba(43, 115, 248, 0.3);
 }
 @media (max-width: 992px) {
   .what_we_do .grid_what .card {
@@ -466,4 +466,45 @@ p {
 }
 #newRequest #user {
   border-radius: 0 2em 2em 0 !important;
+}
+
+.universidades,
+.certificaciones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+@media (max-width: 1280px) {
+  .universidades,
+  .certificaciones {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 992px) {
+  .universidades,
+  .certificaciones {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 750px) {
+  .universidades,
+  .certificaciones {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.universidades .card-animation:hover,
+.certificaciones .card-animation:hover {
+  box-shadow: 2px 2px 6px rgba(43, 115, 248, 0.3);
+}
+.universidades .card-body,
+.certificaciones .card-body {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.universidades .card-body img,
+.certificaciones .card-body img {
+  width: 3em;
+  height: 3em;
+  border-radius: 0.6em;
 }/*# sourceMappingURL=myBootstrap.css.map */

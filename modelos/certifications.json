@@ -1,0 +1,103 @@
+[
+  {
+    "nombre": "Microsoft",
+    "fields": "Certificaciones en Tecnología",
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQomToXdaITnDNh_gfzvynzTWnrpkleOrZpsdIOTAYPWA&s"
+  },
+  {
+    "nombre": "Cisco",
+    "fields": "Certificaciones en Redes y Seguridad",
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbLyTRa2QINmvALs192AwMauhteXFQlnEqYSMoKSWXJQ&s"
+  },
+  {
+    "nombre": "Amazon Web Services (AWS)",
+    "fields": "Certificaciones en Computación en la Nube",
+    "url": "https://pbs.twimg.com/profile_images/1351573137855373312/NusaOfNL_400x400.jpg"
+  },
+  {
+    "nombre": "Google",
+    "fields": "Certificaciones en Tecnologías de Google",
+    "url": "https://pbs.twimg.com/profile_images/1311763847775125516/mvBRhlDs_400x400.jpg"
+  },
+
+  {
+    "nombre": "CompTIA",
+    "fields": "Certificaciones en Tecnología de la Información",
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqzfzUkSRDacNCdWp43ake8i3pCpDWh1LG5_o7c0_51A&s"
+  },
+  {
+    "nombre": "IBM",
+    "fields": "Certificaciones en Tecnología Empresarial y Soluciones de Software",
+    "url": "https://pbs.twimg.com/profile_images/1493920231005302784/dd4UB7E1_400x400.jpg"
+  },
+  {
+    "nombre": "VMware",
+    "fields": "Certificaciones en Virtualización y Administración de Infraestructuras",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Vmware_workstation_16_icon.svg/1200px-Vmware_workstation_16_icon.svg.png"
+  },
+  {
+    "nombre": "Red Hat",
+    "fields": "Certificaciones en Sistemas Operativos y Plataformas de Desarrollo",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Red_Hat_logo.svg/640px-Red_Hat_logo.svg.png"
+  },
+  {
+    "nombre": "Salesforce",
+    "fields": "Certificaciones en CRM y Soluciones de Negocios",
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSadkXEfTWJ3kxZNgwK7rd1D26UcZOQea5RIOgrBdFgag&s"
+  },
+  {
+    "nombre": "Oracle",
+    "fields": "Certificaciones en Bases de Datos y Tecnologías Empresariales",
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxnIuWkygupBehX8U9cj-_A-0sTMhCdsC_OM9mZiL3og&s"
+  },
+  {
+    "nombre": "Adobe",
+    "fields": "Certificaciones en Diseño Gráfico y Edición de Medios",
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKx84qn5Tdik8IVGCqWMyHFJRSgbIce4h2MIGkNInJFremPEmeE7nwnHT9khpl17FQl0Q&usqp=CAU"
+  },
+  {
+    "nombre": "Offensive Security",
+    "fields": "Offensive Security es una empresa internacional estadounidense que trabaja en seguridad de la información, pruebas de penetración y análisis forense digital",
+    "url": "https://pbs.twimg.com/profile_images/1630975309234176000/KRjE4tPM_400x400.jpg"
+  },
+  {
+    "nombre": "Citrix",
+    "fields": "Certificaciones en Virtualización de Aplicaciones y Redes",
+    "url": "https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxoyCf4av2PrezrvmNJdctZ1MCJrUgsgGg7l2Q5nsSV3WgC8iQzyMoVhMAQlnz8TUyGVD3d35A9CL2GBDuo5bQLY-&format=source"
+  },
+  {
+    "nombre": "Palo Alto Networks",
+    "fields": "Certificaciones en Seguridad de Red y Firewall",
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlwNqVI2OGFyqXO2sBWYPRuI8FL0Bs8YGoTjtI3CF9nA&s"
+  },
+  {
+    "nombre": "Fortinet",
+    "fields": "Certificaciones en Seguridad de Red y Sistemas de Seguridad",
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_SbsZWNVQ5-zqkdqhK_i2bskh6SqXx3qOvOJmCQFQuQ&s"
+  },
+  {
+    "nombre": "Docker",
+    "fields": "Certificaciones en Contenedores y Despliegue de Aplicaciones",
+    "url": "https://pbs.twimg.com/profile_images/1749553035133566976/hMA0FbDk_400x400.jpg"
+  },
+  {
+    "nombre": "INE Security",
+    "fields": "INE is the exclusive training provider for INE Security certifications. Start training through one of our subscription plans or purchase a certification voucher now!",
+    "url": "https://media.graphassets.com/output=format:webp/OawxPQEGTriVTzFkrpRb"
+  },
+  {
+    "nombre": "HashiCorp",
+    "fields": "Certificaciones en Automatización de Infraestructura y Gestión de Configuraciones",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/HashiCorp_Logo_no_text.png"
+  },
+  {
+    "nombre": "Splunk",
+    "fields": "Certificaciones en Análisis de Datos y Plataformas de Seguridad",
+    "url": "https://www.ucyfer.com/wp-content/uploads/2023/01/logo-splunk.jpeg"
+  },
+  {
+    "nombre": "EC-Council",
+    "fields": "EC-Council es una empresa de certificación, educación, capacitación y servicios de seguridad cibernética con sede en Albuquerque, Nuevo México",
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5JTklnsMOF2F-f0Rka1Mnl0v-TBQozJu5PYOxY8_G4g&s"
+  }
+]
