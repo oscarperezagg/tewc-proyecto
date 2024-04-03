@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
     sessionStorage.removeItem("pomodoro");
   }
 
+  // Añadir mirar un pomodoroSet en LocalStorage
+
   const spanTime = document.getElementById("time");
 
   spanTime.innerHTML = segundosAFormato(pomodoroSet.time * 60);
@@ -36,6 +38,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Agregar un event listener de click al botón
   startButton.addEventListener("click", function () {
+    // Añadir mirar un pomodoroSet en LocalStorage
+
     // Aquí puedes colocar el código que quieres que se ejecute cuando se haga clic en el botón
     runner();
   });
