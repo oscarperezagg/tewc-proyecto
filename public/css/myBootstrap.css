@@ -459,6 +459,6 @@ p {
 #newRequest textarea {
   border-radius: 2em !important;
 }
-#newRequest #user input {
+#newRequest #user {
   border-radius: 0 2em 2em 0 !important;
 }/*# sourceMappingURL=myBootstrap.css.map */

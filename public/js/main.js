@@ -106,6 +106,17 @@ const logout = () => {
   if (loginButton) {
     loginButton.removeAttribute("hidden");
   }
+
+  var userInput = document.getElementById("user");
+
+  // Verificar si se encontró un elemento con ID "user"
+  if (userInput) {
+    // Vaciar el contenido del campo de entrada
+    userInput.value = "";
+
+    // Quitar el atributo "readonly" si existe
+    userInput.removeAttribute("readonly");
+  }
 };
 
 const addRequest = () => {
