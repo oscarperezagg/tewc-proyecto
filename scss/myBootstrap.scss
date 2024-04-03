@@ -7,6 +7,24 @@ $blue-gradient: linear-gradient(
   rgb(83, 143, 255, 0.8),
   rgb(43, 115, 248)
 );
+$yellow-gradient: linear-gradient(
+  to bottom right,
+  rgb(255, 255, 102, 0.8),
+  rgb(255, 204, 51)
+);
+
+$red-gradient: linear-gradient(
+  to bottom right,
+  rgb(255, 102, 102, 0.8),
+  rgb(255, 51, 51)
+);
+
+$green-gradient: linear-gradient(
+  to bottom right,
+  rgb(102, 255, 102, 0.8),
+  rgb(51, 204, 51)
+);
+
 $test: linear-gradient(to right, rgb(134, 175, 251, 0.75), rgb(43, 115, 248));
 $blue-img-gradient: linear-gradient(
   to bottom right,
@@ -466,5 +484,17 @@ p {
       margin-left: 10px; // Añade un margen izquierdo para separar el botón del texto
       border-radius: 2em;
     }
+  }
+  .bg-info {
+    background-image: $blue-gradient;
+  }
+  .bg-warning {
+    background-image: $yellow-gradient;
+  }
+  .bg-success {
+    background-image: $green-gradient;
+  }
+  .bg-danger {
+    background-image: $red-gradient;
   }
 }

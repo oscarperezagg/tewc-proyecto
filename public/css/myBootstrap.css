@@ -441,4 +441,16 @@ p {
 .requests .menu .btn {
   margin-left: 10px;
   border-radius: 2em;
+}
+.requests .bg-info {
+  background-image: linear-gradient(to bottom right, rgba(83, 143, 255, 0.8), rgb(43, 115, 248));
+}
+.requests .bg-warning {
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 102, 0.8), rgb(255, 204, 51));
+}
+.requests .bg-success {
+  background-image: linear-gradient(to bottom right, rgba(102, 255, 102, 0.8), rgb(51, 204, 51));
+}
+.requests .bg-danger {
+  background-image: linear-gradient(to bottom right, rgba(255, 102, 102, 0.8), rgb(255, 51, 51));
 }/*# sourceMappingURL=myBootstrap.css.map */
