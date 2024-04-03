@@ -431,6 +431,11 @@ p {
 .requests .pagination li:last-child a {
   border-radius: 0 2em 2em 0 !important;
 }
+.requests td:not(:first-child) {
+  font-family: "Geist-Light", sans-serif; /* Usar la fuente 'Geist-Bold' */
+  font-size: small;
+  font-weight: lighter; /* Establecer el peso de la fuente como negrita */
+}
 .requests .menu {
   display: flex;
   justify-content: space-between;
