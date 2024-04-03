@@ -5,13 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>LearnHub</title>
     <link href="/public/css/bootstrap.css" rel="stylesheet" />
-    <meta name="theme-color" content="#4484FC" />
     <link href="/public/css/myBootstrap.css" rel="stylesheet" />
+    <meta name="theme-color" content="#4484FC" />
+
     <!-- Color de tema -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#4484FC" />
     <!-- Color de la barra de estado en iOS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Setup and start animation! -->
+    <link
+      href="https://cdn.datatables.net/v/bs5/dt-2.0.3/af-2.7.0/b-3.0.1/cr-2.0.0/date-1.5.2/fc-5.0.0/fh-4.0.1/kt-2.12.0/r-3.0.1/rg-1.5.0/rr-1.5.0/sc-2.4.1/sb-1.7.0/sp-2.3.0/sl-2.0.0/datatables.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.datatables.net/v/bs5/dt-2.0.3/af-2.7.0/b-3.0.1/cr-2.0.0/date-1.5.2/fc-5.0.0/fh-4.0.1/kt-2.12.0/r-3.0.1/rg-1.5.0/rr-1.5.0/sc-2.4.1/sb-1.7.0/sp-2.3.0/sl-2.0.0/datatables.min.js"></script>
   </head>
   <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="login"
+      tabindex="-1"
+      aria-labelledby="loginLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered myModal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="loginLabel">Login</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <label for="username" class="form-label">Username</label>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">@</span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="oscarperezagg"
+                aria-label="Username"
+                id="username"
+                name="username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              placeholder="********"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-danger rounded-pill"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              id="modalLoginButton"
+              type="button"
+              class="btn btn-primary rounded-pill"
+              data-bs-dismiss="modal"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <nav
       class="navbar navbar-expand-lg bg-primary rounded-nav"
       data-bs-theme="dark"
@@ -40,10 +113,7 @@
               <a class="nav-link" href="/universidad.html">University</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                aria-current="page"
-                href="/certification.html"
+              <a class="nav-link" aria-current="page" href="/certification.html"
                 >Certifications</a
               >
             </li>
@@ -62,24 +132,107 @@
               >
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2 rounded-pill"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-              data-bs-theme="light"
-            />
-
-            <button class="btn btn-outline-light rounded-pill" type="submit">
-              Search
+          <div class="d-flex" role="search">
+            <button
+              id="loginButton"
+              class="btn btn-outline-light rounded-pill me-2"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#login"
+            >
+              Login
             </button>
-          </form>
+            <span
+              id="span_username"
+              class="btn btn-outline-light rounded-pill"
+              hidden
+            ></span>
+            <button
+              id="logOutButton"
+              class="btn btn-outline-light rounded-pill ms-2"
+              type="button"
+              hidden
+            >
+              Logout
+            </button>
+
+            <!-- Button trigger modal -->
+          </div>
         </div>
       </div>
     </nav>
     <div id="root">
+      <div class="card requests mb-4">
+        <div class="card-body">
+          <div></div>
+          <h1 class="mb-5">Requests board</h1>
+          <table
+            data-order='[[ 2, "desc" ]]'
+            data-page-length="25"
+            id="tabla-peticiones"
+            class="table table-striped table-hover"
+          >
+            <thead class="">
+              <tr>
+                <th>Status</th>
+                <th>Topic</th>
+                <th>Description</th>
+                <th>Request date</th>
+                <th>User</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
 
+      <script>
+        $(document).ready(function () {
+          // Hacer una solicitud AJAX para obtener los datos del archivo JSON
+          $.getJSON("/modelos/requests.json", function (data) {
+            // Iterar sobre cada objeto en el arreglo de datos
+            $.each(data, function (index, peticion) {
+              // Crear una nueva fila de la tabla y agregar los datos de la petición
+              var row = $("<tr>");
+              var badgeClass = "";
+              switch (peticion.estado) {
+                case "Pending":
+                  badgeClass = "badge rounded-pill bg-warning text-dark";
+                  break;
+                case "Under review":
+                  badgeClass = "badge rounded-pill bg-info text-light";
+                  break;
+                case "Approved":
+                  badgeClass = "badge rounded-pill bg-success text-light";
+                  break;
+                case "Rejected":
+                  badgeClass = "badge rounded-pill bg-danger text-light";
+                  break;
+                default:
+                  badgeClass = "badge rounded-pill bg-secondary text-light";
+              }
+              row.append(
+                $("<td>").append(
+                  $("<span>").addClass(badgeClass).text(peticion.estado)
+                )
+              );
+
+              row.append($("<td>").text(peticion.tema));
+              row.append($("<td>").text(peticion.solicitud));
+              row.append($("<td>").text(peticion.fecha));
+              row.append($("<td>").text(peticion.usuario));
+
+              $("#tabla-peticiones tbody").append(row);
+            });
+
+            $("#tabla-peticiones").DataTable({
+              responsive: true,
+              scrollY: 600,
+              select: true,
+            });
+          });
+        });
+      </script>
     </div>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
@@ -89,9 +242,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- Load library from the CDN -->
-    <!-- <script src="router.js"></script> -->
-    <!-- Setup and start animation! -->
-
- 
+    <script src="/public/js/main.js"></script>
   </body>
 </html>

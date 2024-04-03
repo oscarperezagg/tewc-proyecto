@@ -1,0 +1,702 @@
+[
+    {
+        "usuario": "art_aficionado",
+        "tema": "Graphic design",
+        "solicitud": "Expand coverage of topics related to professional certifications.",
+        "fecha": "2024-03-13",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "math_master",
+        "tema": "Personal finance",
+        "solicitud": "Provide leadership and team management classes for professionals.",
+        "fecha": "2024-03-20",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "art_aficionado",
+        "tema": "Vibrant and participatory community",
+        "solicitud": "Develop a user progress tracking feature.",
+        "fecha": "2024-03-07",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "math_master",
+        "tema": "Accessibility and collaboration",
+        "solicitud": "Develop a user progress tracking feature.",
+        "fecha": "2024-03-20",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "math_master",
+        "tema": "Integration with video conferencing platforms",
+        "solicitud": "Improve platform accessibility for users with disabilities.",
+        "fecha": "2024-03-15",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "knowledge_seeker",
+        "tema": "Integration with video conferencing platforms",
+        "solicitud": "Enrich content with videos, infographics, and other multimedia resources.",
+        "fecha": "2024-03-15",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "art_aficionado",
+        "tema": "Pomodoro Technique",
+        "solicitud": "Promote appreciation of art and culture through classes and exhibitions.",
+        "fecha": "2024-03-13",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "history_buff",
+        "tema": "Integration with social networks",
+        "solicitud": "Improve platform accessibility for users with disabilities.",
+        "fecha": "2024-03-25",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "math_master",
+        "tema": "Object-oriented programming",
+        "solicitud": "Improve platform accessibility for users with disabilities.",
+        "fecha": "2024-04-01",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "wellness_warrior",
+        "tema": "Flashcard learning",
+        "solicitud": "Offer foreign language classes focusing on oral and written communication.",
+        "fecha": "2024-03-18",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "language_lover",
+        "tema": "Pomodoro Technique",
+        "solicitud": "Organize conferences on the latest advancements in science and technology.",
+        "fecha": "2024-03-16",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "math_master",
+        "tema": "Leadership and team management",
+        "solicitud": "Promote appreciation of art and culture through classes and exhibitions.",
+        "fecha": "2024-03-09",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "math_master",
+        "tema": "Art and culture",
+        "solicitud": "Provide leadership and team management classes for professionals.",
+        "fecha": "2024-03-07",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "math_master",
+        "tema": "Personalization of learning experience",
+        "solicitud": "Incorporate new study tools such as mind maps and schemas.",
+        "fecha": "2024-03-07",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "wellness_warrior",
+        "tema": "Integration with social networks",
+        "solicitud": "Encourage creativity through literature and creative writing workshops.",
+        "fecha": "2024-03-06",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "design_expert",
+        "tema": "Health and wellness",
+        "solicitud": "Offer advanced tutorials in data analysis using popular tools.",
+        "fecha": "2024-03-30",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "history_buff",
+        "tema": "Accessibility and collaboration",
+        "solicitud": "Allow users to customize their learning experience according to their interests and needs.",
+        "fecha": "2024-03-26",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "study_guru",
+        "tema": "Improvements in user interface",
+        "solicitud": "Provide leadership and team management classes for professionals.",
+        "fecha": "2024-03-26",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "language_lover",
+        "tema": "Science and technology",
+        "solicitud": "Allow integration with popular video conferencing platforms for live classes.",
+        "fecha": "2024-03-24",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "math_master",
+        "tema": "Democratization of access to knowledge",
+        "solicitud": "Allow users to customize their learning experience according to their interests and needs.",
+        "fecha": "2024-04-02",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "math_master",
+        "tema": "Integration with social networks",
+        "solicitud": "Improve platform accessibility for users with disabilities.",
+        "fecha": "2024-03-10",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "wellness_warrior",
+        "tema": "Ecology and environment",
+        "solicitud": "Create a resources section for oppositions and standardized exams.",
+        "fecha": "2024-03-31",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "study_guru",
+        "tema": "Integration with video conferencing platforms",
+        "solicitud": "Create a mobile app to access LearnHub from mobile devices.",
+        "fecha": "2024-03-15",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "history_buff",
+        "tema": "Object-oriented programming",
+        "solicitud": "Offer interpersonal skills and effective communication courses.",
+        "fecha": "2024-03-14",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "knowledge_seeker",
+        "tema": "Digital marketing",
+        "solicitud": "Offer advanced tutorials in data analysis using popular tools.",
+        "fecha": "2024-03-17",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "coding_ninja",
+        "tema": "Pomodoro Technique",
+        "solicitud": "Organize digital marketing seminars with industry experts.",
+        "fecha": "2024-03-24",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "coding_ninja",
+        "tema": "Art and culture",
+        "solicitud": "Create modules for financial education for proper personal finance management.",
+        "fecha": "2024-03-15",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "coding_ninja",
+        "tema": "Object-oriented programming",
+        "solicitud": "Expand the code testing bank with new challenges.",
+        "fecha": "2024-03-07",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "design_expert",
+        "tema": "Code testing",
+        "solicitud": "Expand coverage of topics related to professional certifications.",
+        "fecha": "2024-04-01",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "math_master",
+        "tema": "Science and technology",
+        "solicitud": "Offer health and wellness tips for a balanced life.",
+        "fecha": "2024-03-06",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "tech_enthusiast",
+        "tema": "Web development",
+        "solicitud": "Make design adjustments to make the platform more intuitive and attractive.",
+        "fecha": "2024-03-18",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "history_buff",
+        "tema": "Personal finance",
+        "solicitud": "Include graphic design workshops for beginners and professionals.",
+        "fecha": "2024-03-10",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "knowledge_seeker",
+        "tema": "Integration with video conferencing platforms",
+        "solicitud": "Offer advanced tutorials in data analysis using popular tools.",
+        "fecha": "2024-03-16",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "design_expert",
+        "tema": "Art and culture",
+        "solicitud": "Develop practical web development projects with modern technologies.",
+        "fecha": "2024-04-02",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "study_guru",
+        "tema": "Personal finance",
+        "solicitud": "Allow users to share their progress and achievements on social networks.",
+        "fecha": "2024-03-30",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "tech_enthusiast",
+        "tema": "Personalization of learning experience",
+        "solicitud": "Offer advanced tutorials in data analysis using popular tools.",
+        "fecha": "2024-03-19",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "tech_enthusiast",
+        "tema": "Personalization of learning experience",
+        "solicitud": "Integrate real-time collaboration features for users.",
+        "fecha": "2024-04-03",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "knowledge_seeker",
+        "tema": "Code testing",
+        "solicitud": "Facilitate search and discovery of card groups and resources.",
+        "fecha": "2024-03-23",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "design_expert",
+        "tema": "Integration with video conferencing platforms",
+        "solicitud": "Create a resources section for oppositions and standardized exams.",
+        "fecha": "2024-03-30",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "tech_enthusiast",
+        "tema": "Vibrant and participatory community",
+        "solicitud": "Organize digital marketing seminars with industry experts.",
+        "fecha": "2024-03-15",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "design_expert",
+        "tema": "Ecology and environment",
+        "solicitud": "Facilitate search and discovery of card groups and resources.",
+        "fecha": "2024-03-20",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "knowledge_seeker",
+        "tema": "Foreign languages",
+        "solicitud": "Add more decks of cards on various topics.",
+        "fecha": "2024-03-23",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "eco_advocate",
+        "tema": "Integration with social networks",
+        "solicitud": "Implement a Pomodoro-based timer.",
+        "fecha": "2024-03-16",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "knowledge_seeker",
+        "tema": "Interpersonal skills",
+        "solicitud": "Add more content related to data science and analysis.",
+        "fecha": "2024-04-02",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "history_buff",
+        "tema": "Personal finance",
+        "solicitud": "Offer interpersonal skills and effective communication courses.",
+        "fecha": "2024-03-05",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "knowledge_seeker",
+        "tema": "Digital marketing",
+        "solicitud": "Expand coverage of topics related to professional certifications.",
+        "fecha": "2024-03-11",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "eco_advocate",
+        "tema": "Democratization of access to knowledge",
+        "solicitud": "Integrate real-time collaboration features for users.",
+        "fecha": "2024-03-25",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "study_guru",
+        "tema": "Health and wellness",
+        "solicitud": "Implement a Pomodoro-based timer.",
+        "fecha": "2024-03-18",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "coding_ninja",
+        "tema": "Web development",
+        "solicitud": "Expand the code testing bank with new challenges.",
+        "fecha": "2024-03-16",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "coding_ninja",
+        "tema": "Vibrant and participatory community",
+        "solicitud": "Introduce gamification elements to motivate users to learn.",
+        "fecha": "2024-03-25",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "art_aficionado",
+        "tema": "Integration with video conferencing platforms",
+        "solicitud": "Create a mobile app to access LearnHub from mobile devices.",
+        "fecha": "2024-03-27",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "knowledge_seeker",
+        "tema": "Ecology and environment",
+        "solicitud": "Organize digital marketing seminars with industry experts.",
+        "fecha": "2024-03-28",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "eco_advocate",
+        "tema": "Art and culture",
+        "solicitud": "Enrich content with videos, infographics, and other multimedia resources.",
+        "fecha": "2024-04-02",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "art_aficionado",
+        "tema": "Integration with social networks",
+        "solicitud": "Offer advanced tutorials in data analysis using popular tools.",
+        "fecha": "2024-03-31",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "tech_enthusiast",
+        "tema": "Mathematics and physics",
+        "solicitud": "Develop practical web development projects with modern technologies.",
+        "fecha": "2024-03-29",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "language_lover",
+        "tema": "Accessibility and collaboration",
+        "solicitud": "Conduct awareness activities on environmental protection.",
+        "fecha": "2024-03-18",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "study_guru",
+        "tema": "Web development",
+        "solicitud": "Develop practical web development projects with modern technologies.",
+        "fecha": "2024-03-11",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "art_aficionado",
+        "tema": "Flashcard learning",
+        "solicitud": "Create specialized courses in object-oriented programming.",
+        "fecha": "2024-03-17",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "tech_enthusiast",
+        "tema": "Leadership and team management",
+        "solicitud": "Allow users to share their progress and achievements on social networks.",
+        "fecha": "2024-03-21",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "art_aficionado",
+        "tema": "Object-oriented programming",
+        "solicitud": "Offer foreign language classes focusing on oral and written communication.",
+        "fecha": "2024-03-21",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "coding_ninja",
+        "tema": "Development of a mobile application",
+        "solicitud": "Facilitate search and discovery of card groups and resources.",
+        "fecha": "2024-03-13",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "design_expert",
+        "tema": "Accessibility and collaboration",
+        "solicitud": "Add more content related to data science and analysis.",
+        "fecha": "2024-03-29",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "knowledge_seeker",
+        "tema": "Literature and creative writing",
+        "solicitud": "Include graphic design workshops for beginners and professionals.",
+        "fecha": "2024-04-02",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "study_guru",
+        "tema": "Object-oriented programming",
+        "solicitud": "Expand coverage of topics related to professional certifications.",
+        "fecha": "2024-03-28",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "study_guru",
+        "tema": "Science and technology",
+        "solicitud": "Integrate real-time collaboration features for users.",
+        "fecha": "2024-03-16",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "study_guru",
+        "tema": "Accessibility and collaboration",
+        "solicitud": "Expand coverage of topics related to professional certifications.",
+        "fecha": "2024-03-21",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "study_guru",
+        "tema": "Development of a mobile application",
+        "solicitud": "Offer interpersonal skills and effective communication courses.",
+        "fecha": "2024-03-10",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "learner123",
+        "tema": "Personal finance",
+        "solicitud": "Enrich content with videos, infographics, and other multimedia resources.",
+        "fecha": "2024-03-28",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "eco_advocate",
+        "tema": "Mathematics and physics",
+        "solicitud": "Expand coverage of topics related to professional certifications.",
+        "fecha": "2024-03-14",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "knowledge_seeker",
+        "tema": "Integration with video conferencing platforms",
+        "solicitud": "Allow users to share their progress and achievements on social networks.",
+        "fecha": "2024-03-20",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "knowledge_seeker",
+        "tema": "Code testing",
+        "solicitud": "Create specialized courses in object-oriented programming.",
+        "fecha": "2024-03-07",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "learner123",
+        "tema": "Graphic design",
+        "solicitud": "Include graphic design workshops for beginners and professionals.",
+        "fecha": "2024-03-19",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "tech_enthusiast",
+        "tema": "Personalization of learning experience",
+        "solicitud": "Create modules for financial education for proper personal finance management.",
+        "fecha": "2024-03-06",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "math_master",
+        "tema": "Digital marketing",
+        "solicitud": "Create modules for financial education for proper personal finance management.",
+        "fecha": "2024-03-14",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "language_lover",
+        "tema": "Leadership and team management",
+        "solicitud": "Offer foreign language classes focusing on oral and written communication.",
+        "fecha": "2024-03-06",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "learner123",
+        "tema": "Pomodoro Technique",
+        "solicitud": "Create modules for financial education for proper personal finance management.",
+        "fecha": "2024-03-19",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "history_buff",
+        "tema": "Pomodoro Technique",
+        "solicitud": "Offer advanced tutorials in data analysis using popular tools.",
+        "fecha": "2024-03-09",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "language_lover",
+        "tema": "Accessibility and collaboration",
+        "solicitud": "Allow users to customize their learning experience according to their interests and needs.",
+        "fecha": "2024-03-30",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "design_expert",
+        "tema": "Pomodoro Technique",
+        "solicitud": "Introduce gamification elements to motivate users to learn.",
+        "fecha": "2024-03-22",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "math_master",
+        "tema": "New study tools",
+        "solicitud": "Add more content related to data science and analysis.",
+        "fecha": "2024-03-06",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "study_guru",
+        "tema": "Improvements in user interface",
+        "solicitud": "Expand the code testing bank with new challenges.",
+        "fecha": "2024-03-24",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "coding_ninja",
+        "tema": "Ecology and environment",
+        "solicitud": "Make design adjustments to make the platform more intuitive and attractive.",
+        "fecha": "2024-03-06",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "study_guru",
+        "tema": "Improvements in user interface",
+        "solicitud": "Expand the code testing bank with new challenges.",
+        "fecha": "2024-03-27",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "tech_enthusiast",
+        "tema": "Personal finance",
+        "solicitud": "Expand coverage of topics related to professional certifications.",
+        "fecha": "2024-03-22",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "art_aficionado",
+        "tema": "Enriched multimedia content",
+        "solicitud": "Make design adjustments to make the platform more intuitive and attractive.",
+        "fecha": "2024-03-23",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "knowledge_seeker",
+        "tema": "Object-oriented programming",
+        "solicitud": "Offer foreign language classes focusing on oral and written communication.",
+        "fecha": "2024-03-28",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "coding_ninja",
+        "tema": "Gamification features",
+        "solicitud": "Offer interpersonal skills and effective communication courses.",
+        "fecha": "2024-03-17",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "design_expert",
+        "tema": "Interpersonal skills",
+        "solicitud": "Enrich content with videos, infographics, and other multimedia resources.",
+        "fecha": "2024-03-24",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "design_expert",
+        "tema": "Integration with video conferencing platforms",
+        "solicitud": "Create modules for financial education for proper personal finance management.",
+        "fecha": "2024-03-22",
+        "estado": "Pending"
+    },
+    {
+        "usuario": "coding_ninja",
+        "tema": "New study tools",
+        "solicitud": "Expand coverage of topics related to professional certifications.",
+        "fecha": "2024-03-11",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "eco_advocate",
+        "tema": "Foreign languages",
+        "solicitud": "Create a resources section for oppositions and standardized exams.",
+        "fecha": "2024-03-14",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "math_master",
+        "tema": "Web development",
+        "solicitud": "Develop a user progress tracking feature.",
+        "fecha": "2024-03-23",
+        "estado": "Rejected"
+    },
+    {
+        "usuario": "tech_enthusiast",
+        "tema": "Literature and creative writing",
+        "solicitud": "Create a resources section for oppositions and standardized exams.",
+        "fecha": "2024-04-02",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "learner123",
+        "tema": "Foreign languages",
+        "solicitud": "Develop practical web development projects with modern technologies.",
+        "fecha": "2024-03-22",
+        "estado": "Under review"
+    },
+    {
+        "usuario": "learner123",
+        "tema": "Democratization of access to knowledge",
+        "solicitud": "Make design adjustments to make the platform more intuitive and attractive.",
+        "fecha": "2024-03-30",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "art_aficionado",
+        "tema": "Health and wellness",
+        "solicitud": "Include graphic design workshops for beginners and professionals.",
+        "fecha": "2024-03-28",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "history_buff",
+        "tema": "Mathematics and physics",
+        "solicitud": "Introduce gamification elements to motivate users to learn.",
+        "fecha": "2024-03-15",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "learner123",
+        "tema": "Improvements in user interface",
+        "solicitud": "Introduce gamification elements to motivate users to learn.",
+        "fecha": "2024-03-13",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "math_master",
+        "tema": "Web development",
+        "solicitud": "Create modules for financial education for proper personal finance management.",
+        "fecha": "2024-03-16",
+        "estado": "Approved"
+    },
+    {
+        "usuario": "language_lover",
+        "tema": "Mathematics and physics",
+        "solicitud": "Include graphic design workshops for beginners and professionals.",
+        "fecha": "2024-03-20",
+        "estado": "Under review"
+    }
+]

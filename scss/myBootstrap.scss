@@ -1,5 +1,5 @@
 @import "fonts";
-
+// Variables
 $box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 $box-shift-shadow: 4px 0 3px rgba(0, 0, 0, 0.4);
 $blue-gradient: linear-gradient(
@@ -18,25 +18,31 @@ $blue-ligth-gradient: linear-gradient(
   rgba(159, 193, 255),
   rgb(68, 134, 255)
 );
+
+// Estilos generales del body
 body {
-  font-family: "Geist-Regular", sans-serif;
+  font-family: "Geist-Light", sans-serif;
   background-color: #ffffff;
 }
 
+// Estilos para párrafos
 p {
-  font-family: "Geist-Regular", sans-serif; /* Usar la fuente 'Geist-Bold' */
+  font-family: "Geist-Light", sans-serif; /* Usar la fuente 'Geist-Bold' */
   font-weight: lighter; /* Establecer el peso de la fuente como negrita */
 }
 
+// Estilos para la marca de la barra de navegación
 .navbar-brand {
   font-size: x-large;
   font-weight: 1000;
 }
 
+// Estilos para el contenido del carrusel
 .carousel-inner {
   max-height: 30em;
 }
 
+// Estilos para la navegación redondeada
 .rounded-nav {
   padding-left: 0.8em;
   margin: 0 2em;
@@ -50,11 +56,12 @@ p {
     margin-top: 1em;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     border-radius: 2em;
   }
 }
 
+// Estilos para el contenedor principal
 #root {
   padding-top: 2em;
   margin: 0 2em;
@@ -64,20 +71,23 @@ p {
     margin: 0 1.1em;
   }
 
+  // Estilos para las tarjetas
   .card {
     border-radius: 2.5em;
     padding: 1em 0.8em;
   }
 
+  // Estilos específicos para las tarjetas de la página principal
   .home-card {
     min-height: fit-content;
     box-shadow: $box-shadow;
     background-image: $blue-gradient;
     border-color: transparent;
 
+    // Estilos para el contenido del banner
     h1 {
-      font-family: "Geist-Bold", sans-serif; /* Usar la fuente 'Geist-Bold' */
-      font-weight: bold; /* Establecer el peso de la fuente como negrita */
+      font-family: "Geist-Bold", sans-serif;
+      font-weight: bold;
       color: white;
     }
 
@@ -86,8 +96,8 @@ p {
       display: flex;
       justify-content: space-between;
       gap: 2em;
-      overflow-y: auto; /* Agrega desplazamiento vertical automáticamente cuando sea necesario */
-      scrollbar-width: none; /* Oculta las barras de desplazamiento en navegadores que la admiten */
+      overflow-y: auto;
+      scrollbar-width: none;
 
       .card {
         margin: 0.3em;
@@ -105,57 +115,58 @@ p {
           margin-bottom: 1rem;
         }
         h5 {
-          font-family: "Geist-Regular", sans-serif; /* Usar la fuente 'Geist-Bold' */
-          font-weight: bold; /* Establecer el peso de la fuente como negrita */
+          font-family: "Geist-Light", sans-serif;
+          font-weight: bold;
         }
       }
     }
   }
 }
 
+// Estilos para el elemento #test-span
 #test-span {
   color: white;
 }
 
+// Estilos para la marca de la barra de navegación
 .navbar-brand {
   font-weight: 900;
 }
 
+// Estilos para la animación de tarjetas
 .card.card-animation {
   opacity: 0;
-  transform: translateY(
-    40px
-  ); /* Empieza con la tarjeta ligeramente desplazada hacia abajo */
-  animation: slide-up 1s ease forwards; /* Aplica la animación de desplazamiento hacia arriba */
-}
+  transform: translateY(40px);
+  animation: slide-up 1s ease forwards;
 
-@keyframes slide-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px); /* Inicia desde ligeramente abajo */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0); /* Termina en la posición normal */
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
+// Oculta las barras de desplazamiento en navegadores webkit
 #banner-content::-webkit-scrollbar {
-  display: none; /* Oculta las barras de desplazamiento en navegadores basados en WebKit (como Chrome y Safari) */
+  display: none;
 }
 
+// Estilos para la sección de información
 .info {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5em;
-
   margin-top: 8em;
   margin-bottom: 8em;
   padding: 0 5em;
 
   @media screen and (max-width: 1400px) {
     margin: 0 10em;
-
     margin-top: 8em;
     margin-bottom: 8em;
   }
@@ -175,6 +186,7 @@ p {
     margin: 3em 0;
   }
 
+  // Estilos para las tarjetas dentro de la sección de información
   .card {
     width: 25rem;
     height: 25rem;
@@ -186,10 +198,11 @@ p {
 
     margin: 0 !important;
     padding: 0 !important;
-    justify-self: center; /* Alinea el elemento a la derecha horizontalmente */
+    justify-self: center;
     border-color: transparent;
     box-shadow: $box-shadow;
     overflow: auto;
+
     .card-body {
       margin: 0;
       padding: 0;
@@ -202,16 +215,17 @@ p {
     }
   }
 
+  // Estilos para los títulos y párrafos dentro de la sección de información
   h2 {
-    font-family: "Geist-Bold", sans-serif; /* Usar la fuente 'Geist-Bold' */
+    font-family: "Geist-Bold", sans-serif;
     font-size: 3.5em;
-    font-weight: bold; /* Establecer el peso de la fuente como negrita */
+    font-weight: bold;
     margin-bottom: 0.2em;
   }
   p {
-    font-family: "Geist-Regular", sans-serif; /* Usar la fuente 'Geist-Bold' */
+    font-family: "Geist-Light", sans-serif;
     font-size: 1.1rem;
-    font-weight: lighter; /* Establecer el peso de la fuente como negrita */
+    font-weight: lighter;
     margin-bottom: 1em;
   }
   button {
@@ -219,6 +233,7 @@ p {
     background-image: $blue-gradient;
   }
 
+  // Estilos para las imágenes dentro de las tarjetas
   .card {
     position: relative;
     display: inline-block;
@@ -252,13 +267,13 @@ p {
   }
 }
 
+// Estilos para la sección "Qué hacemos"
 .what_we_do {
   padding: 0 4em;
   margin-bottom: 4em;
 
   @media screen and (max-width: 1400px) {
     margin: 0 8em;
-
     margin-bottom: 6em;
   }
 
@@ -274,48 +289,50 @@ p {
   }
 
   h3 {
-    font-family: "Geist-Bold", sans-serif; /* Usar la fuente 'Geist-Bold' */
+    font-family: "Geist-Bold", sans-serif;
     font-size: 3em;
-    font-weight: bold; /* Establecer el peso de la fuente como negrita */
+    font-weight: bold;
     margin-bottom: 0.5em;
   }
   h5 {
-    font-family: "Geist-Regultar", sans-serif; /* Usar la fuente 'Geist-Bold' */
+    font-family: "Geist-Regultar", sans-serif;
     font-size: 1.8em;
-    font-weight: 600; /* Establecer el peso de la fuente como negrita */
+    font-weight: 600;
     margin-bottom: 0.5em;
   }
   h6 {
-    font-family: "Geist-Regultar", sans-serif; /* Usar la fuente 'Geist-Bold' */
+    font-family: "Geist-Regultar", sans-serif;
     font-size: 1.1em;
-    font-weight: 550; /* Establecer el peso de la fuente como negrita */
+    font-weight: 550;
     margin-bottom: 0.5em;
   }
   p {
-    font-family: "Geist-Regular", sans-serif; /* Usar la fuente 'Geist-Bold' */
-    font-weight: lighter; /* Establecer el peso de la fuente como negrita */
+    font-family: "Geist-Light", sans-serif;
+    font-weight: lighter;
     margin-bottom: 1em;
     text-align: justify;
   }
 
+  // Estilos para la rejilla de tarjetas en la sección "Qué hacemos"
   .grid_what {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
-    gap: 1em; /* Espacio entre los elementos */
+    flex-wrap: wrap;
+    gap: 1em;
 
     .card {
-      flex: 1 0 30%; /* Establece el tamaño de cada elemento */
+      flex: 1 0 30%;
       min-height: 18em;
       box-shadow: $box-shadow;
 
       @media (max-width: 992px) {
-        flex: 1 0 100%; /* Cambia el tamaño de los elementos a ocupar el 100% del ancho */
+        flex: 1 0 100%;
         min-height: fit-content;
       }
     }
   }
 }
 
+// Estilos para las tarjetas en el pie de página
 .fotter-card {
   min-height: fit-content;
   box-shadow: $box-shadow;
@@ -330,22 +347,110 @@ p {
   }
 
   p {
-    font-family: "Geist-Regular", sans-serif; /* Usar la fuente 'Geist-Bold' */
-    font-weight: lighter; /* Establecer el peso de la fuente como negrita */
+    font-family: "Geist-Light", sans-serif;
+    font-weight: lighter;
   }
 }
 
+// Estilos específicos para pantallas pequeñas
 @media (max-width: 1200px) {
   .two {
     display: flex;
     flex-direction: column;
     .card {
-      order: 2; /* Cambiar el orden de aparición */
+      order: 2;
       align-self: center;
     }
 
     .moreContent {
-      order: 1; /* Cambiar el orden de aparición */
+      order: 1;
+    }
+  }
+}
+
+.modal-dialog {
+  .modal-header,
+  .modal-footer {
+    border: none; // Resetting border properties to none
+  }
+  .modal-content {
+    border-radius: 2em;
+    border-color: transparent;
+    padding: 0.5em 1em;
+  }
+
+  #password {
+    border-radius: 8em !important;
+  }
+  #username {
+    border-radius: 0 8em 8em 0 !important;
+  }
+  .input-group-text {
+    border-radius: 8em 0 0 8em !important;
+  }
+
+  span,
+  label {
+    font-family: "Geist-Light", sans-serif;
+  }
+  h2 {
+    font-family: "Geist-Light", sans-serif;
+    font-size: 1.5em !important;
+    font-weight: 700 !important;
+  }
+}
+
+#span_username:hover,
+#span_username:focus,
+#span_username:visited {
+  background-color: transparent;
+  color: white;
+}
+
+.construction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  .construction-text {
+    max-width: 300px;
+    text-align: justify;
+  }
+  img {
+    width: 10rem;
+  }
+}
+
+.requests {
+  select,
+  input {
+    border-radius: 2em !important;
+  }
+  .page-link {
+    color: $blue-gradient;
+    // background-color: orange;
+  }
+  .disabled {
+    .page-link {
+    }
+  }
+  .active {
+    .page-link {
+      background-image: $blue-gradient;
+    }
+  }
+
+  .pagination {
+    li:first-child {
+      a {
+        border-radius: 2em 0 0 2em !important;
+      }
+    }
+    li:last-child {
+      a {
+        border-radius: 0 2em 2em 0 !important;
+      }
     }
   }
 }

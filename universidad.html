@@ -5,13 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>LearnHub</title>
     <link href="/public/css/bootstrap.css" rel="stylesheet" />
-    <meta name="theme-color" content="#4484FC" />
     <link href="/public/css/myBootstrap.css" rel="stylesheet" />
+    <meta name="theme-color" content="#4484FC" />
+
     <!-- Color de tema -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#4484FC" />
     <!-- Color de la barra de estado en iOS -->
   </head>
   <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="login"
+      tabindex="-1"
+      aria-labelledby="loginLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered myModal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="loginLabel">Login</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <label for="username" class="form-label">Username</label>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">@</span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="oscarperezagg"
+                aria-label="Username"
+                id="username"
+                name="username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              placeholder="********"
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-danger rounded-pill"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              id="modalLoginButton"
+              type="button"
+              class="btn btn-primary rounded-pill"
+              data-bs-dismiss="modal"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <nav
       class="navbar navbar-expand-lg bg-primary rounded-nav"
       data-bs-theme="dark"
@@ -56,23 +121,47 @@
               >
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2 rounded-pill"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-              data-bs-theme="light"
-            />
-
-            <button class="btn btn-outline-light rounded-pill" type="submit">
-              Search
+          <div class="d-flex" role="search">
+            <button
+              id="loginButton"
+              class="btn btn-outline-light rounded-pill me-2"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#login"
+            >
+              Login
             </button>
-          </form>
+            <span
+              id="span_username"
+              class="btn btn-outline-light rounded-pill"
+              hidden
+            ></span>
+            <button
+              id="logOutButton"
+              class="btn btn-outline-light rounded-pill ms-2"
+              type="button"
+              hidden
+            >
+              Logout
+            </button>
+
+            <!-- Button trigger modal -->
+          </div>
         </div>
       </div>
     </nav>
-    <div id="root"></div>
+    <div id="root">
+      <div class="construction">
+        <img src="/public/img/construir.png" alt="" />
+        <div class="construction-text">
+          <p class="mt-4">
+            We apologize for the inconvenience, but this site is currently under
+            construction. We're working hard to bring you an even better
+            experience. Thank you for your patience!"
+          </p>
+        </div>
+      </div>
+    </div>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script
@@ -81,7 +170,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- Load library from the CDN -->
-    <!-- <script src="router.js"></script> -->
-    <!-- Setup and start animation! -->
+    <script src="/public/js/main.js"></script>
+
   </body>
 </html>
