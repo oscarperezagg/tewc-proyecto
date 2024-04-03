@@ -498,3 +498,15 @@ p {
     background-image: $red-gradient;
   }
 }
+
+#newRequest {
+  input,
+  textarea {
+    border-radius: 2em !important;
+  }
+  #user {
+    input {
+      border-radius: 0 2em 2em 0 !important;
+    }
+  }
+}
