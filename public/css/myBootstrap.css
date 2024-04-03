@@ -538,6 +538,31 @@ p {
   font-size: 10em;
   font-weight: lighter; /* Establecer el peso de la fuente como negrita */
 }
+@media (max-width: 800px) {
+  .pomodoro .card .card-body #time {
+    font-size: 9em;
+  }
+}
+@media (max-width: 700px) {
+  .pomodoro .card .card-body #time {
+    font-size: 8em;
+  }
+}
+@media (max-width: 576px) {
+  .pomodoro .card .card-body #time {
+    font-size: 7em;
+  }
+}
+@media (max-width: 400px) {
+  .pomodoro .card .card-body #time {
+    font-size: 5em;
+  }
+}
+@media (max-width: 300px) {
+  .pomodoro .card .card-body #time {
+    font-size: 4em;
+  }
+}
 .pomodoro .card .card-body button {
   width: 17em;
   height: 6em;

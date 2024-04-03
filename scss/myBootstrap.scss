@@ -578,6 +578,21 @@ p {
         font-family: "Geist-Bold", sans-serif; /* Usar la fuente 'Geist-Bold' */
         font-size: 10em;
         font-weight: lighter; /* Establecer el peso de la fuente como negrita */
+        @media (max-width: 800px) {
+          font-size: 9em;
+        }
+        @media (max-width: 700px) {
+          font-size: 8em;
+        }
+        @media (max-width: 576px) {
+          font-size: 7em;
+        }
+        @media (max-width: 400px) {
+          font-size: 5em;
+        }
+        @media (max-width: 300px) {
+          font-size: 4em;
+        }
       }
 
       button {

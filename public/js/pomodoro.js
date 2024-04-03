@@ -1,8 +1,8 @@
 let countdownWorker = undefined;
 const pomodoroSet = {
   status: "first",
-  time: 0.2,
-  break: 0.1,
+  time: 180,
+  break: 30,
   round: 3,
   completed: 0,
 };
