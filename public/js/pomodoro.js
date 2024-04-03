@@ -1,8 +1,8 @@
 let countdownWorker = undefined;
 const pomodoroSet = {
   status: "first",
-  time: 1,
-  break: 5,
+  time: 0.2,
+  break: 0.1,
   round: 3,
   completed: 0,
 };
@@ -95,6 +95,11 @@ const runner = () => {
     // Ejemplo de uso:
 
     // Crear un Web Worker
+    try {
+      if (countdownWorker) countdownWorker.terminate();
+    } catch (e) {
+      console.log(e);
+    }
     countdownWorker = new Worker("/public/js/pomodoroWorkers.js");
 
     // Iniciar el countdown
