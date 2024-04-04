@@ -551,11 +551,18 @@ p {
 }
 
 .pomodoro {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: minmax(250px, 1fr) 5fr;
+  gap: 2em;
 
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    .config {
+      order: 2;
+    }
+  }
   .card {
-    width: 45em;
     height: 40em;
     background-image: $blue-gradient;
     .card-body {
@@ -578,14 +585,21 @@ p {
         font-family: "Geist-Bold", sans-serif; /* Usar la fuente 'Geist-Bold' */
         font-size: 10em;
         font-weight: lighter; /* Establecer el peso de la fuente como negrita */
-        @media (max-width: 800px) {
+
+        @media (max-width: 1000px) {
           font-size: 9em;
         }
-        @media (max-width: 700px) {
+        @media (max-width: 900px) {
+          font-size: 8.5em;
+        }
+        @media (max-width: 800px) {
           font-size: 8em;
         }
-        @media (max-width: 576px) {
+        @media (max-width: 700px) {
           font-size: 7em;
+        }
+        @media (max-width: 576px) {
+          font-size: 6em;
         }
         @media (max-width: 400px) {
           font-size: 5em;
@@ -598,6 +612,29 @@ p {
       button {
         width: 17em;
         height: 6em;
+        border-radius: 3em;
+      }
+    }
+  }
+
+  .config {
+    background-image: none;
+
+    .card-body {
+      color: black;
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      padding: 1em 0.8em;
+
+      input {
+        border-radius: 2em;
+        margin-bottom: 1em;
+        width: 100%;
+      }
+      button {
+        width: 100%;
+        height: auto;
         border-radius: 3em;
       }
     }

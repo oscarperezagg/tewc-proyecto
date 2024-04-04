@@ -159,7 +159,36 @@
     </nav>
     <div id="root">
       <div class="pomodoro">
-        <div class="card mb-4">
+        <div class="card mb-4 config">
+          <div class="card-body">
+            <h2>Settings</h2>
+            <label for="pomodoro" class="form-label">Pomodoro time</label>
+            <input
+              type="number"
+              id="pomodorotime"
+              name="pomodorotime"
+              class="form-control"
+            />
+            <label for="breaktime" class="form-label">Break time</label>
+            <input
+              type="number"
+              id="breaktime"
+              name="breaktime"
+              class="form-control"
+            />
+            <label for="rounds" class="form-label">Rounds</label>
+            <input
+              type="number"
+              id="rounds"
+              name="rounds"
+              class="form-control"
+            />
+            <button id="saveButton" class="btn btn-outline-primary">
+              Save
+            </button>
+          </div>
+        </div>
+        <div class="card mb-4 timer">
           <div class="card-body">
             <span class="rounded-pill" id="status">Pomodoro</span>
             <span id="time">##:##</span>

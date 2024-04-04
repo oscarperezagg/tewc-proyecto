@@ -23,35 +23,54 @@ function segundosAFormato(segundos) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+  // 1. Borrado de seguridad
   if (sessionStorage.getItem("pomodoro")) {
-    // Borrar el elemento "pomodoro" del sessionStorage
     sessionStorage.removeItem("pomodoro");
   }
 
-  // Añadir mirar un pomodoroSet en LocalStorage
+  // 2. Añadimos la configuración de seguridad
+  if (!localStorage.getItem("pomodoroSet")) {
+    localStorage.setItem("pomodoroSet", JSON.stringify(pomodoroSet));
+  }
 
-  const spanTime = document.getElementById("time");
+  // 3. Modificamos la UI
+  const pomodoroSetFromStorage = JSON.parse(
+    localStorage.getItem("pomodoroSet")
+  );
 
-  spanTime.innerHTML = segundosAFormato(pomodoroSet.time * 60);
-  // Obtener el botón por su ID
+  const spanTime = document.getElementById("time"); // Tiempo
+  spanTime.innerHTML = segundosAFormato(pomodoroSetFromStorage.time * 60);
+
+  // Actualizar los valores de los campos de entrada
+  document.getElementById("pomodorotime").value = pomodoroSetFromStorage.time;
+  document.getElementById("breaktime").value = pomodoroSetFromStorage.break;
+  document.getElementById("rounds").value = pomodoroSetFromStorage.round;
+  // 4. Añadimos listener al start button
   const startButton = document.getElementById("startButton");
-
-  // Agregar un event listener de click al botón
   startButton.addEventListener("click", function () {
-    // Añadir mirar un pomodoroSet en LocalStorage
-
-    // Aquí puedes colocar el código que quieres que se ejecute cuando se haga clic en el botón
     runner();
+  });
+
+  // 5. Añadimos listener al save button
+  const saveButton = document.getElementById("saveButton");
+  saveButton.addEventListener("click", function () {
+    save();
   });
 });
 
 const runner = () => {
   // Verificar si no existe un elemento llamado "pomodoro" en el sessionStorage
   if (!sessionStorage.getItem("pomodoro")) {
+    // Verificar si el elemento pomodoroSet está en el localStorage
+    if (!localStorage.getItem("pomodoroSet")) {
+      // Convertir el objeto a cadena JSON y guardarlo en el localStorage
+      localStorage.setItem("pomodoroSet", JSON.stringify(pomodoroSet));
+    }
+    const pomodoroSetFromStorage = JSON.parse(
+      localStorage.getItem("pomodoroSet")
+    );
     // Crear un objeto con las claves "status" y "time"
-
-    // Convertir el objeto a cadena JSON y guardar en el sessionStorage
-    sessionStorage.setItem("pomodoro", JSON.stringify(pomodoroSet));
+    sessionStorage.setItem("pomodoro", JSON.stringify(pomodoroSetFromStorage));
   }
   // Obtener el objeto "pomodoro" del sessionStorage y convertirlo a objeto
   const pomodoroData = JSON.parse(sessionStorage.getItem("pomodoro"));
@@ -140,4 +159,62 @@ const runner = () => {
       }
     };
   }
+};
+
+const save = () => {
+  // 1. Borramos el web worker
+  try {
+    if (countdownWorker) countdownWorker.terminate();
+  } catch (e) {
+    console.log(e);
+  }
+
+  // 2. Borramos el pomodoro
+  if (sessionStorage.getItem("pomodoro")) {
+    sessionStorage.removeItem("pomodoro");
+  }
+
+  // 4. Actualizamos los valores
+  let pomodoroTime = document.getElementById("pomodorotime").value;
+  let breakTime = document.getElementById("breaktime").value;
+  let rounds = document.getElementById("rounds").value;
+
+  // 5. Copiamos el original
+  let newConfig = { ...pomodoroSet };
+
+  // 6. Actualizamos los valores
+  if (pomodoroTime) newConfig.time = pomodoroTime;
+  if (
+    !(
+      breakTime === null ||
+      breakTime === undefined ||
+      breakTime === "" ||
+      parseInt(breakTime) <= 0
+    )
+  ) {
+    newConfig.break = breakTime;
+  }
+  if (
+    !(
+      rounds === null ||
+      rounds === undefined ||
+      rounds === "" ||
+      parseInt(breakTime) <= 2
+    )
+  ) {
+    newConfig.round = rounds;
+  }
+  localStorage.setItem("pomodoroSet", JSON.stringify(newConfig));
+
+  // 7. Modificamos la UI
+  const pomodoroSetFromStorage = JSON.parse(
+    localStorage.getItem("pomodoroSet")
+  );
+
+  const spanTime = document.getElementById("time");
+
+  spanTime.innerHTML = segundosAFormato(pomodoroSetFromStorage.time * 60);
+  // Obtener el botón por su ID
+  const startButton = document.getElementById("startButton");
+  startButton.innerHTML = "START";
 };

@@ -510,11 +510,20 @@ p {
 }
 
 .pomodoro {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: minmax(250px, 1fr) 5fr;
+  gap: 2em;
+}
+@media (max-width: 800px) {
+  .pomodoro {
+    display: flex;
+    flex-direction: column;
+  }
+  .pomodoro .config {
+    order: 2;
+  }
 }
 .pomodoro .card {
-  width: 45em;
   height: 40em;
   background-image: linear-gradient(to bottom right, rgba(83, 143, 255, 0.8), rgb(43, 115, 248));
 }
@@ -538,19 +547,29 @@ p {
   font-size: 10em;
   font-weight: lighter; /* Establecer el peso de la fuente como negrita */
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .pomodoro .card .card-body #time {
     font-size: 9em;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
+  .pomodoro .card .card-body #time {
+    font-size: 8.5em;
+  }
+}
+@media (max-width: 800px) {
   .pomodoro .card .card-body #time {
     font-size: 8em;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 700px) {
   .pomodoro .card .card-body #time {
     font-size: 7em;
+  }
+}
+@media (max-width: 576px) {
+  .pomodoro .card .card-body #time {
+    font-size: 6em;
   }
 }
 @media (max-width: 400px) {
@@ -566,5 +585,25 @@ p {
 .pomodoro .card .card-body button {
   width: 17em;
   height: 6em;
+  border-radius: 3em;
+}
+.pomodoro .config {
+  background-image: none;
+}
+.pomodoro .config .card-body {
+  color: black;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 1em 0.8em;
+}
+.pomodoro .config .card-body input {
+  border-radius: 2em;
+  margin-bottom: 1em;
+  width: 100%;
+}
+.pomodoro .config .card-body button {
+  width: 100%;
+  height: auto;
   border-radius: 3em;
 }/*# sourceMappingURL=myBootstrap.css.map */
