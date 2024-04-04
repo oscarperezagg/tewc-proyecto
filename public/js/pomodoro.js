@@ -106,8 +106,6 @@ const runner = () => {
     sessionStorage.setItem("pomodoro", JSON.stringify(pomodoroData));
     const startButton = document.getElementById("startButton");
     startButton.innerHTML = "PAUSED";
-
-    // Si está pausado resumimos
     countdownWorker.postMessage({ action: "resume" });
   } else {
     // Cambiar el estado a "paused"

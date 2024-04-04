@@ -57,9 +57,8 @@ async function loadUniversities() {
 }
 
 // Función para cargar el contenido HTML de la página
-async function loadHTMLContent(html) {
+async function loadHTMLContent(filePath, ...props) {
   // Ruta del archivo HTML a cargar
-  const filePath = "templates/uni/uni.html";
   try {
     // Usar fetch para obtener el contenido del archivo HTML
     const response = await fetch(filePath);
@@ -70,7 +69,7 @@ async function loadHTMLContent(html) {
     const htmlContent = await response.text();
     // Insertar el contenido del archivo HTML en el elemento <div> con el ID "root"
     const rootDiv = document.getElementById("root");
-    rootDiv.innerHTML = formatString(htmlContent, { content: html });
+    rootDiv.innerHTML = formatString(htmlContent, ...props);
   } catch (error) {
     // Manejar cualquier error que ocurra durante la carga del archivo HTML
     console.error("Error:", error);
@@ -120,16 +119,8 @@ async function uniLoader(button) {
   // Cargar la información de la universidad seleccionada
   const idNumber = parseInt(partes[1]);
 
-  const html = await loadUniversity(idNumber);
-
-  // Temporal
-  if (idNumber !== 0) {
-    await loadError();
-    return;
-  }
-
   // Cargar el contenido HTML de la página
-  await loadHTMLContent(html);
+  await loadDegree(idNumber);
 }
 
 // Listener para cargar la página
@@ -137,7 +128,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Cargar la información de las universidades
   const html = await loadUniversities();
   // Cargar el contenido HTML de la página
-  await loadHTMLContent(html);
+  await loadHTMLContent("templates/uni/uni.html", { content: html });
 
   // Agregar el evento de clic a todos los botones
   document.addEventListener("click", (e) => {
@@ -169,3 +160,62 @@ async function loadError() {
     console.error("Error:", error);
   }
 }
+
+const getSingleDregree = async (id) => {
+  // URL del archivo JSON
+  const url = "modelos/colleges.json";
+  try {
+    // Usar fetch para obtener el contenido del archivo JSON
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error("Error al cargar el archivo JSON");
+    }
+    // Convertir la respuesta a JSON
+    const colleges = await response.json();
+    console.log(id, colleges);
+
+    return colleges[id];
+  } catch (error) {
+    // Manejar cualquier error que ocurra durante la carga del archivo JSON
+    console.error("Error:", error);
+    return false;
+  }
+};
+
+const loadDegree = async (id) => {
+  // Obtenemos los detalles de colleges.json
+  const degree = await getSingleDregree(id);
+  console.log(degree);
+  // Obtenemos el nombre del archivo con los datos
+  var formattedName = degree.nombre.toLowerCase().replace(/ /g, "_");
+  console.log(formattedName);
+  const url = "modelos/carreras.json";
+  let html = "";
+  try {
+    // Usar fetch para obtener el contenido del archivo JSON
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error("Error al cargar el archivo JSON");
+    }
+    // Convertir la respuesta a JSON
+    const carreras = await response.json();
+    console.log("CARRERAS", carreras);
+    carreras.forEach((carrera, index) => {
+      if (carrera.universidad !== formattedName) return;
+      html += `
+        <button type="button" class="btn">${carrera.carrera}</button>
+      `;
+    });
+  } catch (error) {
+    // Manejar cualquier error que ocurra durante la carga del archivo JSON
+    console.error("Error:", error);
+    html = "No data found - Try UPM";
+  }
+  if (html === "") {
+    html = "No data found - Try UPM";
+  }
+  loadHTMLContent("templates/uni/degree.html", {
+    content: html,
+    name: degree.nombre,
+  });
+};

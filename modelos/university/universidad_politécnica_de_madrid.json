@@ -1,0 +1,972 @@
+[
+    {
+        "C\u00f3digo": "95000001",
+        "Semestre": "1",
+        "ASIGNATURA": "ALGEBRA",
+        "Acr\u00f3nimo": "ALGE",
+        "TIPO": "B\u00e1s",
+        "ECTS": "6",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "PRIMER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000002",
+        "Semestre": "1",
+        "ASIGNATURA": "CALCULO",
+        "Acr\u00f3nimo": "CALC",
+        "TIPO": "B\u00e1s",
+        "ECTS": "6",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "PRIMER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000003",
+        "Semestre": "1",
+        "ASIGNATURA": "FISICA GENERAL 1",
+        "Acr\u00f3nimo": "FIS1",
+        "TIPO": "B\u00e1s",
+        "ECTS": "6",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "PRIMER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000004",
+        "Semestre": "1",
+        "ASIGNATURA": "INTRODUCCI\u00d3N A LA INGENIERIA DE TELECOMUNICACION",
+        "Acr\u00f3nimo": "INIT",
+        "TIPO": "OB",
+        "ECTS": "3",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "PRIMER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000008",
+        "Semestre": "1",
+        "ASIGNATURA": "INTRODUCCI\u00d3N AL AN\u00c1LISIS DE CIRCUITOS",
+        "Acr\u00f3nimo": "IACR",
+        "TIPO": "B\u00e1s",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "PRIMER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000005",
+        "Semestre": "1",
+        "ASIGNATURA": "FUNDAMENTOS DE LOS SISTEMAS TELEMATICOS",
+        "Acr\u00f3nimo": "FTEL",
+        "TIPO": "OB",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "PRIMER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000006",
+        "Semestre": "2",
+        "ASIGNATURA": "F\u00cdSICA GENERAL 2",
+        "Acr\u00f3nimo": "FIS2",
+        "TIPO": "OB",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "PRIMER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000007",
+        "Semestre": "2",
+        "ASIGNATURA": "AN\u00c1LISIS VECTORIAL",
+        "Acr\u00f3nimo": "AVEC",
+        "TIPO": "B\u00e1s",
+        "ECTS": "6",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "PRIMER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000009",
+        "Semestre": "2",
+        "ASIGNATURA": "INTRODUCCI\u00d3N A LA ELECTR\u00d3NICA",
+        "Acr\u00f3nimo": "INEL",
+        "TIPO": "B\u00e1s",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda (*)",
+        "CURSO-ITINERARIO": "PRIMER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000010",
+        "Semestre": "2",
+        "ASIGNATURA": "PROGRAMACI\u00d3N",
+        "Acr\u00f3nimo": "PRG",
+        "TIPO": "B\u00e1s",
+        "ECTS": "6",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "PRIMER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000012",
+        "Semestre": "2",
+        "ASIGNATURA": "FUNDAMENTOS DE GESTI\u00d3N EMPRESARIAL",
+        "Acr\u00f3nimo": "FGST",
+        "TIPO": "B\u00e1s",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "PRIMER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000019",
+        "Semestre": "2",
+        "ASIGNATURA": "M\u00c9TODOS MATEM\u00c1TICOS",
+        "Acr\u00f3nimo": "MMAT",
+        "TIPO": "B\u00e1s",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "PRIMER CURSO"
+    },
+    {
+        "C\u00f3digo": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "Semestre": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "ASIGNATURA": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "Acr\u00f3nimo": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "TIPO": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "ECTS": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "GU\u00cdAS 23/24": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "CURSO-ITINERARIO": "PRIMER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000011",
+        "Semestre": "1",
+        "ASIGNATURA": "INGL\u00c9S I",
+        "Acr\u00f3nimo": "IGL1",
+        "TIPO": "OB",
+        "ECTS": "3",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO"
+    },
+    {
+        "C\u00f3digo": "95000013",
+        "Semestre": "1",
+        "ASIGNATURA": "ELECTROMAGNETISMO",
+        "Acr\u00f3nimo": "ELMG",
+        "TIPO": "B\u00e1s",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda (*)",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO"
+    },
+    {
+        "C\u00f3digo": "95000014",
+        "Semestre": "1",
+        "ASIGNATURA": "ELECTR\u00d3NICA E INSTRUMENTACI\u00d3N B\u00c1SICAS",
+        "Acr\u00f3nimo": "EINB",
+        "TIPO": "B\u00e1s",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO"
+    },
+    {
+        "C\u00f3digo": "95000015",
+        "Semestre": "1",
+        "ASIGNATURA": "SE\u00d1ALES Y SISTEMAS",
+        "Acr\u00f3nimo": "SSIT",
+        "TIPO": "B\u00e1s",
+        "ECTS": "6",
+        "GU\u00cdAS 23/24": "gu\u00eda (*)",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO"
+    },
+    {
+        "C\u00f3digo": "95000016",
+        "Semestre": "1",
+        "ASIGNATURA": "SE\u00d1ALES ALEATORIAS",
+        "Acr\u00f3nimo": "SALT",
+        "TIPO": "OB",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda (*)",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO"
+    },
+    {
+        "C\u00f3digo": "95000018",
+        "Semestre": "1",
+        "ASIGNATURA": "ELECTR\u00d3NICA DIGITAL",
+        "Acr\u00f3nimo": "EDIG",
+        "TIPO": "OB",
+        "ECTS": "3",
+        "GU\u00cdAS 23/24": "gu\u00eda (*)",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO"
+    },
+    {
+        "C\u00f3digo": "95000017",
+        "Semestre": "2",
+        "ASIGNATURA": "INGL\u00c9S II",
+        "Acr\u00f3nimo": "IGL2",
+        "TIPO": "OB",
+        "ECTS": "3",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO"
+    },
+    {
+        "C\u00f3digo": "95000020",
+        "Semestre": "2",
+        "ASIGNATURA": "ELECTR\u00d3NICA ANAL\u00d3GICA",
+        "Acr\u00f3nimo": "ELAN",
+        "TIPO": "OB",
+        "ECTS": "3",
+        "GU\u00cdAS 23/24": "gu\u00eda (*)",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO"
+    },
+    {
+        "C\u00f3digo": "95000021",
+        "Semestre": "2",
+        "ASIGNATURA": "TEOR\u00cdA DE LA COMUNICACI\u00d3N",
+        "Acr\u00f3nimo": "TECM",
+        "TIPO": "OB",
+        "ECTS": "6",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO"
+    },
+    {
+        "C\u00f3digo": "95000022",
+        "Semestre": "2",
+        "ASIGNATURA": "CAMPOS Y ONDAS EN TELECOMUNICACI\u00d3N",
+        "Acr\u00f3nimo": "COTE",
+        "TIPO": "OB",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO"
+    },
+    {
+        "C\u00f3digo": "95000023",
+        "Semestre": "2",
+        "ASIGNATURA": "REDES Y SERVICIOS DE TELECOMUNICACI\u00d3N",
+        "Acr\u00f3nimo": "RSTC",
+        "TIPO": "OB",
+        "ECTS": "6",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO"
+    },
+    {
+        "C\u00f3digo": "95000024",
+        "Semestre": "2",
+        "ASIGNATURA": "AN\u00c1LISIS Y DISE\u00d1O DEL SOFTWARE",
+        "Acr\u00f3nimo": "ADSW",
+        "TIPO": "OB",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO"
+    },
+    {
+        "C\u00f3digo": "95000029",
+        "Semestre": "2",
+        "ASIGNATURA": "AN\u00c1LISIS Y DISE\u00d1O DE CIRCUITOS",
+        "Acr\u00f3nimo": "ADCT",
+        "TIPO": "OB",
+        "ECTS": "3",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO"
+    },
+    {
+        "C\u00f3digo": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "Semestre": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "ASIGNATURA": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "Acr\u00f3nimo": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "TIPO": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "ECTS": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "GU\u00cdAS 23/24": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO"
+    },
+    {
+        "C\u00f3digo": "95000077",
+        "Semestre": "1",
+        "ASIGNATURA": "HERRAMIENTAS PARA LA COMPUTACI\u00d3N Y VISUALIZACI\u00d3N",
+        "Acr\u00f3nimo": "HCOV",
+        "TIPO": "OP",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO - OPTATIVAS"
+    },
+    {
+        "C\u00f3digo": "95000079",
+        "Semestre": "1",
+        "ASIGNATURA": "DIBUJO POR ORDENADOR",
+        "Acr\u00f3nimo": "DBOR",
+        "TIPO": "OP",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO - OPTATIVAS"
+    },
+    {
+        "C\u00f3digo": "95000086",
+        "Semestre": "1",
+        "ASIGNATURA": "FOT\u00d3NICA DE CONSUMO",
+        "Acr\u00f3nimo": "FOCO",
+        "TIPO": "OP",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO - OPTATIVAS"
+    },
+    {
+        "C\u00f3digo": "95000077",
+        "Semestre": "2",
+        "ASIGNATURA": "HERRAMIENTAS PARA LA COMPUTACI\u00d3N Y VISUALIZACI\u00d3N",
+        "Acr\u00f3nimo": "HCOV",
+        "TIPO": "OP",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO - OPTATIVAS"
+    },
+    {
+        "C\u00f3digo": "95000083",
+        "Semestre": "2",
+        "ASIGNATURA": "TECNOLOG\u00cdAS WEB DE CLIENTE",
+        "Acr\u00f3nimo": "TEWC",
+        "TIPO": "OP",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO - OPTATIVAS"
+    },
+    {
+        "C\u00f3digo": "95000087",
+        "Semestre": "2",
+        "ASIGNATURA": "LABORATORIO DE T\u00c9CNICAS ELECTRO-TERMOQU\u00cdMICAS",
+        "Acr\u00f3nimo": "LTET",
+        "TIPO": "OP",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO - OPTATIVAS"
+    },
+    {
+        "C\u00f3digo": "95000098",
+        "Semestre": "2",
+        "ASIGNATURA": "INTRODUCCI\u00d3N A LOS ENTORNOS INTELIGENTES",
+        "Acr\u00f3nimo": "IEIN",
+        "TIPO": "OP",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO - OPTATIVAS"
+    },
+    {
+        "C\u00f3digo": "95000242",
+        "Semestre": "2",
+        "ASIGNATURA": "INFRAESTRUCTURA DE DATOS ESPACIALES",
+        "Acr\u00f3nimo": "IDE",
+        "TIPO": "OP",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda (*)",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO - OPTATIVAS"
+    },
+    {
+        "C\u00f3digo": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "Semestre": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "ASIGNATURA": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "Acr\u00f3nimo": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "TIPO": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "ECTS": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "GU\u00cdAS 23/24": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "CURSO-ITINERARIO": "SEGUNDO CURSO - OPTATIVAS"
+    },
+    {
+        "C\u00f3digo": "95000025",
+        "Semestre": "1",
+        "ASIGNATURA": "CIRCUITOS ELECTR\u00d3NICOS",
+        "Acr\u00f3nimo": "CELT",
+        "TIPO": "OB",
+        "ECTS": "3",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "TERCER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000026",
+        "Semestre": "1",
+        "ASIGNATURA": "SISTEMAS DIGITALES I",
+        "Acr\u00f3nimo": "SDG1",
+        "TIPO": "OB",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "TERCER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000027",
+        "Semestre": "1",
+        "ASIGNATURA": "TEOR\u00cdA DE LA INFORMACI\u00d3N",
+        "Acr\u00f3nimo": "TINF",
+        "TIPO": "OB",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "TERCER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000028",
+        "Semestre": "1",
+        "ASIGNATURA": "TRATAMIENTO DIGITAL DE SE\u00d1ALES",
+        "Acr\u00f3nimo": "TDS\u00d1",
+        "TIPO": "OB",
+        "ECTS": "6",
+        "GU\u00cdAS 23/24": "gu\u00eda (*)",
+        "CURSO-ITINERARIO": "TERCER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000030",
+        "Semestre": "1",
+        "ASIGNATURA": "SISTEMAS DE TRANSMISI\u00d3N",
+        "Acr\u00f3nimo": "STRA",
+        "TIPO": "OB",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "TERCER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000031",
+        "Semestre": "1",
+        "ASIGNATURA": "REDES DE ORDENADORES",
+        "Acr\u00f3nimo": "RDOR",
+        "TIPO": "OB",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "TERCER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000035",
+        "Semestre": "1",
+        "ASIGNATURA": "RADIACI\u00d3N Y PROPAGACI\u00d3N",
+        "Acr\u00f3nimo": "RDPR",
+        "TIPO": "OB",
+        "ECTS": "3",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "TERCER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000032",
+        "Semestre": "2",
+        "ASIGNATURA": "ORGANIZACI\u00d3N DE EMPRESAS",
+        "Acr\u00f3nimo": "ORGE",
+        "TIPO": "OB",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "TERCER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000033",
+        "Semestre": "2",
+        "ASIGNATURA": "SISTEMAS DIGITALES II",
+        "Acr\u00f3nimo": "SDG2",
+        "TIPO": "OB",
+        "ECTS": "3",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "TERCER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000034",
+        "Semestre": "2",
+        "ASIGNATURA": "SISTEMAS DE ENERG\u00cdA",
+        "Acr\u00f3nimo": "ENRG",
+        "TIPO": "OB",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "TERCER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000036",
+        "Semestre": "2",
+        "ASIGNATURA": "COMUNICACIONES \u00d3PTICAS",
+        "Acr\u00f3nimo": "COPT",
+        "TIPO": "OB",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "TERCER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000037",
+        "Semestre": "2",
+        "ASIGNATURA": "ELECTR\u00d3NICA DE COMUNICACIONES",
+        "Acr\u00f3nimo": "ECOM",
+        "TIPO": "OB",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "TERCER CURSO"
+    },
+    {
+        "C\u00f3digo": "95000038",
+        "Semestre": "2",
+        "ASIGNATURA": "COMPUTACI\u00d3N EN RED",
+        "Acr\u00f3nimo": "CORE",
+        "TIPO": "OB",
+        "ECTS": "4.5",
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "TERCER CURSO"
+    },
+    {
+        "C\u00f3digo": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "Semestre": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "ASIGNATURA": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "Acr\u00f3nimo": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "TIPO": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "ECTS": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "GU\u00cdAS 23/24": "(*) El grupo de Programa Acad\u00e9mico se impartir\u00e1 en Ingl\u00e9s.",
+        "CURSO-ITINERARIO": "TERCER CURSO"
+    },
+    {
+        "C\u00f3digo": 95000277,
+        "Semestre": 1,
+        "ASIGNATURA": "CRIPTOGRAF\u00cdA",
+        "Acr\u00f3nimo": "CRIP",
+        "TIPO": "OP",
+        "ECTS": 4.5,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "TERCER CURSO - OPTATIVAS"
+    },
+    {
+        "C\u00f3digo": 95000088,
+        "Semestre": 1,
+        "ASIGNATURA": "INSTALACIONES EL\u00c9CTRICAS",
+        "Acr\u00f3nimo": "INSE",
+        "TIPO": "OP",
+        "ECTS": 4.5,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "TERCER CURSO - OPTATIVAS"
+    },
+    {
+        "C\u00f3digo": 95000089,
+        "Semestre": 2,
+        "ASIGNATURA": "INTRODUCCI\u00d3N A LA ROB\u00d3TICA INTELIGENTE",
+        "Acr\u00f3nimo": "IRIN",
+        "TIPO": "OP",
+        "ECTS": 4.5,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "TERCER CURSO - OPTATIVAS"
+    },
+    {
+        "C\u00f3digo": 95000092,
+        "Semestre": 2,
+        "ASIGNATURA": "INGENIER\u00cdA DE TELECOMUNICACI\u00d3N EN COOPERACI\u00d3N PARA EL DESARROLLO",
+        "Acr\u00f3nimo": "ITCD",
+        "TIPO": "OP",
+        "ECTS": 4.5,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "TERCER CURSO - OPTATIVAS"
+    },
+    {
+        "C\u00f3digo": 95000094,
+        "Semestre": 2,
+        "ASIGNATURA": "BIOINGENIER\u00cdA Y TELECOMUNICACI\u00d3N",
+        "Acr\u00f3nimo": "BITC",
+        "TIPO": "OP",
+        "ECTS": 4.5,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "TERCER CURSO - OPTATIVAS"
+    },
+    {
+        "C\u00f3digo": 95000096,
+        "Semestre": 2,
+        "ASIGNATURA": "SISTEMAS DE INFORMACI\u00d3N GEOGR\u00c1FICA Y TERRITORIAL",
+        "Acr\u00f3nimo": "SIGT",
+        "TIPO": "OP",
+        "ECTS": 4.5,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "TERCER CURSO - OPTATIVAS"
+    },
+    {
+        "C\u00f3digo": 95000040,
+        "Semestre": "1",
+        "ASIGNATURA": "MICROONDAS",
+        "Acr\u00f3nimo": "MICR",
+        "TIPO": "Ob-It",
+        "ECTS": 4.5,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS DE TELECOMUNICACI\u00d3N"
+    },
+    {
+        "C\u00f3digo": 95000041,
+        "Semestre": "1",
+        "ASIGNATURA": "RADIOCOMUNICACIONES",
+        "Acr\u00f3nimo": "RCOM",
+        "TIPO": "Ob-It",
+        "ECTS": 6.0,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS DE TELECOMUNICACI\u00d3N"
+    },
+    {
+        "C\u00f3digo": 95000042,
+        "Semestre": "1",
+        "ASIGNATURA": "TRANSMISI\u00d3N DIGITAL",
+        "Acr\u00f3nimo": "TRDG",
+        "TIPO": "Ob-It",
+        "ECTS": 6.0,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS DE TELECOMUNICACI\u00d3N"
+    },
+    {
+        "C\u00f3digo": 95000043,
+        "Semestre": "1",
+        "ASIGNATURA": "ANTENAS",
+        "Acr\u00f3nimo": "ANTE",
+        "TIPO": "Ob-It",
+        "ECTS": 4.5,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS DE TELECOMUNICACI\u00d3N"
+    },
+    {
+        "C\u00f3digo": 95000046,
+        "Semestre": "1",
+        "ASIGNATURA": "SISTEMAS DE TELECOMUNICACI\u00d3N",
+        "Acr\u00f3nimo": "STEL",
+        "TIPO": "Ob-It",
+        "ECTS": 6.0,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS DE TELECOMUNICACI\u00d3N"
+    },
+    {
+        "C\u00f3digo": 95000044,
+        "Semestre": "2",
+        "ASIGNATURA": "COMUNICACIONES M\u00d3VILES",
+        "Acr\u00f3nimo": "CMOV",
+        "TIPO": "Ob-It",
+        "ECTS": 6.0,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS DE TELECOMUNICACI\u00d3N"
+    },
+    {
+        "C\u00f3digo": 95000045,
+        "Semestre": "2",
+        "ASIGNATURA": "SISTEMAS DE RADIODETERMINACI\u00d3N",
+        "Acr\u00f3nimo": "RDET",
+        "TIPO": "Ob-It",
+        "ECTS": 4.5,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS DE TELECOMUNICACI\u00d3N"
+    },
+    {
+        "C\u00f3digo": 95000047,
+        "Semestre": "2",
+        "ASIGNATURA": "SUBSISTEMAS DE RADIOFRECUENCIA",
+        "Acr\u00f3nimo": "SURF",
+        "TIPO": "Ob-It",
+        "ECTS": 4.5,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS DE TELECOMUNICACI\u00d3N"
+    },
+    {
+        "C\u00f3digo": 95000082,
+        "Semestre": "1 y 2",
+        "ASIGNATURA": "TRABAJO FIN DE GRADO",
+        "Acr\u00f3nimo": "TFG",
+        "TIPO": "Ob-It",
+        "ECTS": 12.0,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS DE TELECOMUNICACI\u00d3N"
+    },
+    {
+        "C\u00f3digo": 95000050,
+        "Semestre": "1",
+        "ASIGNATURA": "REDES CORPORATIVAS",
+        "Acr\u00f3nimo": "RECO",
+        "TIPO": "Ob-It",
+        "ECTS": 6.0,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN TELEM\u00c1TICA"
+    },
+    {
+        "C\u00f3digo": 95000051,
+        "Semestre": "1",
+        "ASIGNATURA": "SEGURIDAD EN SISTEMAS Y REDES DE TELECOMUNICACI\u00d3N",
+        "Acr\u00f3nimo": "SEGU",
+        "TIPO": "Ob-It",
+        "ECTS": 4.5,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN TELEM\u00c1TICA"
+    },
+    {
+        "C\u00f3digo": 95000052,
+        "Semestre": "1",
+        "ASIGNATURA": "REDES DE COMUNICACIONES M\u00d3VILES",
+        "Acr\u00f3nimo": "RCMO",
+        "TIPO": "Ob-It",
+        "ECTS": 6.0,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN TELEM\u00c1TICA"
+    },
+    {
+        "C\u00f3digo": 95000053,
+        "Semestre": "1",
+        "ASIGNATURA": "INGENIER\u00cdA WEB",
+        "Acr\u00f3nimo": "IWEB",
+        "TIPO": "Ob-It",
+        "ECTS": 6.0,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN TELEM\u00c1TICA"
+    },
+    {
+        "C\u00f3digo": 95000054,
+        "Semestre": "1",
+        "ASIGNATURA": "CENTROS DE DATOS Y DE PROVISI\u00d3N DE SERVICIOS",
+        "Acr\u00f3nimo": "CDPS",
+        "TIPO": "Ob-It",
+        "ECTS": 4.5,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN TELEM\u00c1TICA"
+    },
+    {
+        "C\u00f3digo": 95000055,
+        "Semestre": "2",
+        "ASIGNATURA": "REDES Y SERVICIOS DE RADIO",
+        "Acr\u00f3nimo": "RSRD",
+        "TIPO": "Ob-It",
+        "ECTS": 4.5,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN TELEM\u00c1TICA"
+    },
+    {
+        "C\u00f3digo": 95000056,
+        "Semestre": "2",
+        "ASIGNATURA": "DIMENSIONADO Y OPERACI\u00d3N DE REDES",
+        "Acr\u00f3nimo": "DORE",
+        "TIPO": "Ob-It",
+        "ECTS": 6.0,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN TELEM\u00c1TICA"
+    },
+    {
+        "C\u00f3digo": 95000057,
+        "Semestre": "2",
+        "ASIGNATURA": "INGENIER\u00cdA DE SISTEMAS Y SERVICIOS TELEM\u00c1TICOS",
+        "Acr\u00f3nimo": "ISST",
+        "TIPO": "Ob-It",
+        "ECTS": 4.5,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN TELEM\u00c1TICA"
+    },
+    {
+        "C\u00f3digo": 95000082,
+        "Semestre": "1 y 2",
+        "ASIGNATURA": "TRABAJO FIN DE GRADO",
+        "Acr\u00f3nimo": "TFG",
+        "TIPO": "Ob-It",
+        "ECTS": 12.0,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN TELEM\u00c1TICA"
+    },
+    {
+        "C\u00f3digo": 95000060,
+        "Semestre": "1",
+        "ASIGNATURA": "DISE\u00d1O DE SISTEMAS ELECTR\u00d3NICOS DIGITALES",
+        "Acr\u00f3nimo": "DSED",
+        "TIPO": "Ob-It",
+        "ECTS": 6.0,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS ELECTR\u00d3NICOS"
+    },
+    {
+        "C\u00f3digo": 95000061,
+        "Semestre": "1",
+        "ASIGNATURA": "ARQUITECTURA DE PROCESADORES",
+        "Acr\u00f3nimo": "ARQU",
+        "TIPO": "Ob-It",
+        "ECTS": 4.5,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS ELECTR\u00d3NICOS"
+    },
+    {
+        "C\u00f3digo": 95000062,
+        "Semestre": "1",
+        "ASIGNATURA": "FABRICACI\u00d3N DE EQUIPOS ELECTR\u00d3NICOS",
+        "Acr\u00f3nimo": "FEEL",
+        "TIPO": "Ob-It",
+        "ECTS": 4.5,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS ELECTR\u00d3NICOS"
+    },
+    {
+        "C\u00f3digo": 95000063,
+        "Semestre": "1",
+        "ASIGNATURA": "SISTEMAS ELECTR\u00d3NICOS ANAL\u00d3GICOS Y MIXTOS",
+        "Acr\u00f3nimo": "SEAM",
+        "TIPO": "Ob-It",
+        "ECTS": 6.0,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS ELECTR\u00d3NICOS"
+    },
+    {
+        "C\u00f3digo": 95000064,
+        "Semestre": "1",
+        "ASIGNATURA": "INSTRUMENTACI\u00d3N ELECTR\u00d3NICA",
+        "Acr\u00f3nimo": "IELE",
+        "TIPO": "Ob-It",
+        "ECTS": 6.0,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS ELECTR\u00d3NICOS"
+    },
+    {
+        "C\u00f3digo": 95000065,
+        "Semestre": "2",
+        "ASIGNATURA": "INGENIER\u00cdA DE SISTEMAS ELECTR\u00d3NICOS",
+        "Acr\u00f3nimo": "ISEL",
+        "TIPO": "Ob-It",
+        "ECTS": 4.5,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS ELECTR\u00d3NICOS"
+    },
+    {
+        "C\u00f3digo": 95000066,
+        "Semestre": "2",
+        "ASIGNATURA": "SISTEMAS ELECTR\u00d3NICOS DE CONTROL",
+        "Acr\u00f3nimo": "SECO",
+        "TIPO": "Ob-It",
+        "ECTS": 4.5,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS ELECTR\u00d3NICOS"
+    },
+    {
+        "C\u00f3digo": 95000067,
+        "Semestre": "2",
+        "ASIGNATURA": "SISTEMAS PARA CONECTIVIDAD",
+        "Acr\u00f3nimo": "SCON",
+        "TIPO": "Ob-It",
+        "ECTS": 3.0,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS ELECTR\u00d3NICOS"
+    },
+    {
+        "C\u00f3digo": 95000068,
+        "Semestre": "2",
+        "ASIGNATURA": "ELECTR\u00d3NICA DE CONSUMO",
+        "Acr\u00f3nimo": "ELCO",
+        "TIPO": "Ob-It",
+        "ECTS": 3.0,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS ELECTR\u00d3NICOS"
+    },
+    {
+        "C\u00f3digo": 95000082,
+        "Semestre": "1 y 2",
+        "ASIGNATURA": "TRABAJO FIN DE GRADO",
+        "Acr\u00f3nimo": "TFG",
+        "TIPO": "Ob-It",
+        "ECTS": 12.0,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS ELECTR\u00d3NICOS"
+    },
+    {
+        "C\u00f3digo": 95000070,
+        "Semestre": "1",
+        "ASIGNATURA": "TRATAMIENTO DIGITAL DE VOZ Y AUDIO",
+        "Acr\u00f3nimo": "TDVA",
+        "TIPO": "Ob-It",
+        "ECTS": 6,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS AUDIOVISUALES"
+    },
+    {
+        "C\u00f3digo": 95000071,
+        "Semestre": "1",
+        "ASIGNATURA": "TRATAMIENTO DIGITAL DE IM\u00c1GENES Y V\u00cdDEO",
+        "Acr\u00f3nimo": "TDIV",
+        "TIPO": "Ob-It",
+        "ECTS": 6,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS AUDIOVISUALES"
+    },
+    {
+        "C\u00f3digo": 95000072,
+        "Semestre": "1",
+        "ASIGNATURA": "EQUIPOS Y SISTEMAS AUDIOVISUALES",
+        "Acr\u00f3nimo": "EQSA",
+        "TIPO": "Ob-It",
+        "ECTS": 6,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS AUDIOVISUALES"
+    },
+    {
+        "C\u00f3digo": 95000075,
+        "Semestre": "1",
+        "ASIGNATURA": "TELEVISI\u00d3N",
+        "Acr\u00f3nimo": "TV",
+        "TIPO": "Ob-It",
+        "ECTS": 6,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS AUDIOVISUALES"
+    },
+    {
+        "C\u00f3digo": 95000073,
+        "Semestre": "2",
+        "ASIGNATURA": "DIFUSI\u00d3N Y SERVICIOS DE RED",
+        "Acr\u00f3nimo": "DSRE",
+        "TIPO": "Ob-It",
+        "ECTS": 6,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS AUDIOVISUALES"
+    },
+    {
+        "C\u00f3digo": 95000074,
+        "Semestre": "2",
+        "ASIGNATURA": "COMUNICACIONES AUDIOVISUALES",
+        "Acr\u00f3nimo": "CMAV",
+        "TIPO": "Ob-It",
+        "ECTS": 6,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS AUDIOVISUALES"
+    },
+    {
+        "C\u00f3digo": 95000076,
+        "Semestre": "2",
+        "ASIGNATURA": "PRODUCCI\u00d3N MULTIMEDIA",
+        "Acr\u00f3nimo": "PROD",
+        "TIPO": "Ob-It",
+        "ECTS": 6,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS AUDIOVISUALES"
+    },
+    {
+        "C\u00f3digo": 95000082,
+        "Semestre": "1 y 2",
+        "ASIGNATURA": "TRABAJO FIN DE GRADO",
+        "Acr\u00f3nimo": "TFG",
+        "TIPO": "Ob-It",
+        "ECTS": 12,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - ITINERARIO EN SISTEMAS AUDIOVISUALES"
+    },
+    {
+        "C\u00f3digo": 95000190,
+        "Semestre": "1 y 2",
+        "ASIGNATURA": "GESTI\u00d3N EFICAZ DE EQUIPOS DE TRABAJO",
+        "Acr\u00f3nimo": "GEET",
+        "TIPO": "OP",
+        "ECTS": 3,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - OPTATIVAS PARA TODOS LOS ITINERARIOS"
+    },
+    {
+        "C\u00f3digo": 95000191,
+        "Semestre": "1",
+        "ASIGNATURA": "DESARROLLO PERSONAL Y GESTI\u00d3N DE CARRERA",
+        "Acr\u00f3nimo": "DPGC",
+        "TIPO": "OP",
+        "ECTS": 3,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - OPTATIVAS PARA TODOS LOS ITINERARIOS"
+    },
+    {
+        "C\u00f3digo": 95000244,
+        "Semestre": "1",
+        "ASIGNATURA": "SISTEMAS BASADOS EN APRENDIZAJE AUTOM\u00c1TICO",
+        "Acr\u00f3nimo": "SIBA",
+        "TIPO": "OP",
+        "ECTS": 3,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - OPTATIVAS PARA TODOS LOS ITINERARIOS"
+    },
+    {
+        "C\u00f3digo": 95000246,
+        "Semestre": "1",
+        "ASIGNATURA": "INGENIER\u00cdA DE LA M\u00daSICA",
+        "Acr\u00f3nimo": "IMUS",
+        "TIPO": "OP",
+        "ECTS": 3,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - OPTATIVAS PARA TODOS LOS ITINERARIOS"
+    },
+    {
+        "C\u00f3digo": 95000192,
+        "Semestre": "2",
+        "ASIGNATURA": "CREATIVIDAD E INNOVACI\u00d3N",
+        "Acr\u00f3nimo": "CRIN",
+        "TIPO": "OP",
+        "ECTS": 3,
+        "GU\u00cdAS 23/24": "gu\u00eda",
+        "CURSO-ITINERARIO": "CUARTO CURSO - OPTATIVAS PARA TODOS LOS ITINERARIOS"
+    }
+]
