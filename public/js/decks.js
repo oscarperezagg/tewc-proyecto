@@ -2,19 +2,16 @@ document.addEventListener("DOMContentLoaded", function () {
   // Elimina la variable 'deck' del sessionStorage si existe
   if (sessionStorage.getItem("deck")) {
     sessionStorage.removeItem("deck");
-    console.log('Variable "deck" eliminada de sessionStorage');
   }
 
   // Elimina la variable 'actualIndex' del sessionStorage si existe
   if (sessionStorage.getItem("actualIndex")) {
     sessionStorage.removeItem("actualIndex");
-    console.log('Variable "actualIndex" eliminada de sessionStorage');
   }
 
   // Elimina la variable 'actualIndex' del sessionStorage si existe
   if (sessionStorage.getItem("correctAnswers")) {
     sessionStorage.removeItem("correctAnswers");
-    console.log('Variable "correctAnswers" eliminada de sessionStorage');
   }
 
   document.addEventListener("click", function (event) {
@@ -24,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
     var trCercano = elemento.closest("tr");
     if (trCercano) {
       var idtrCercano = trCercano.id;
-      console.log("Haz hecho clic en un elemento <td> con el id:", idtrCercano);
 
       // Destruir la tabla
       var tabla = $("#tabla-carreras").DataTable();
@@ -36,10 +32,12 @@ document.addEventListener("DOMContentLoaded", function () {
       $("#notSelectedCarrera").attr("hidden", "hidden");
       $(".nothingFound").attr("hidden", "hidden");
       $("#tabla-carreras").attr("hidden", "hidden");
-
+      const questionElement = document.getElementById("question");
+      questionElement.innerHTML = "";
+      const answerElement = document.getElementById("answer");
+      answerElement.innerHTML = "";
       // Obtener el contenido de la tercera columna del <tr> (índice 2)
       var contenidoTerceraColumna = trCercano.cells[2].innerHTML;
-      console.log("Contenido de la tercera columna:", contenidoTerceraColumna);
 
       // Añadir el contenido de la tercera columna al elemento <p> con la clase "title_deck"
       var tituloDeck = document.getElementById("title_deck");
@@ -57,19 +55,16 @@ document.addEventListener("DOMContentLoaded", function () {
 const deck = (id) => {
   if (sessionStorage.getItem("deck")) {
     sessionStorage.removeItem("deck");
-    console.log('Variable "deck" eliminada de sessionStorage');
   }
 
   // Elimina la variable 'actualIndex' del sessionStorage si existe
   if (sessionStorage.getItem("actualIndex")) {
     sessionStorage.removeItem("actualIndex");
-    console.log('Variable "actualIndex" eliminada de sessionStorage');
   }
 
   // Elimina la variable 'actualIndex' del sessionStorage si existe
   if (sessionStorage.getItem("correctAnswers")) {
     sessionStorage.removeItem("correctAnswers");
-    console.log('Variable "correctAnswers" eliminada de sessionStorage');
   }
 
   var elemento = document.getElementById("FailedQuestion");
@@ -92,7 +87,6 @@ const deck = (id) => {
     .then((jsonData) => {
       // Guarda el objeto JSON en sessionStorage como un deck
       sessionStorage.setItem("deck", JSON.stringify(jsonData));
-      console.log("Deck guardado en sessionStorage:", jsonData);
 
       // Guarda el índice actual en sessionStorage
       sessionStorage.setItem("actualIndex", 0);
@@ -104,7 +98,6 @@ const deck = (id) => {
       // Actualizar el innerHTML del elemento con el nuevo valor de correctAnswers
       paciertosElement.innerHTML = "Correct answers: " + "0";
 
-      console.log("Índice actual guardado en sessionStorage: 0");
       // Acceder al primer elemento del array jsonData
       const primerElemento = jsonData[0];
       // Acceder a la pregunta del primer elemento
@@ -122,7 +115,6 @@ const deck = (id) => {
 document.addEventListener("click", function (event) {
   // Retrieve ID of the clicked element
   var id = event.target.id;
-  console.log(id);
   // Check if the clicked element has an ID
   if (id && id == "FailedQuestion") {
     var elemento = document.getElementById("CorrectQuestion");
@@ -136,8 +128,6 @@ document.addEventListener("click", function (event) {
 
     // Actualizar el texto de la respuesta y pregunta en el HTML
     updateAnswerText(currentIndex);
-
-    console.log("Clicked element ID:", id);
   } else if (id && id == "CorrectQuestion") {
     // Obtener el elemento por su ID
     var elemento = document.getElementById("CorrectQuestion");
@@ -152,7 +142,6 @@ document.addEventListener("click", function (event) {
 
     // Obtener el valor actual de correctAnswers de sessionStorage
     var currentCorrectAnswers = sessionStorage.getItem("correctAnswers");
-    console.log(currentCorrectAnswers);
 
     // Convertir el valor obtenido a un número entero
     currentCorrectAnswers = parseInt(currentCorrectAnswers);
@@ -181,9 +170,10 @@ document.addEventListener("click", function (event) {
     // Obtener el valor actual de sessionStorage "actualIndex"
     let currentIndex = parseInt(sessionStorage.getItem("actualIndex"));
     // Actualizar el valor en sessionStorage
+
     sessionStorage.setItem("actualIndex", currentIndex + 1);
     // Actualizar el texto de la respuesta y pregunta en el HTML
-    updateQuestionText(currentIndex);
+    updateQuestionText(currentIndex + 1);
   }
 });
 // Función para actualizar el texto de la respuesta en el HTML
@@ -193,7 +183,7 @@ function updateAnswerText(index) {
   // Obtener el elemento de respuesta del índice actual
   const answerElement = document.getElementById("answer");
   // Verificar si el índice está dentro del rango del array
-  if (index < deck.length) {
+  if (index <= deck.length) {
     // Obtener la respuesta del elemento actualIndex del array deck
     const answer = deck[index].answer;
     // Actualizar el texto de la respuesta en el HTML
@@ -206,10 +196,13 @@ function updateAnswerText(index) {
 
 // Función para actualizar el texto de la pregunta en el HTML
 function updateQuestionText(index) {
+  console.log(index);
   // Obtener el deck del sessionStorage y convertirlo a un array
   const deck = JSON.parse(sessionStorage.getItem("deck"));
   // Obtener el elemento de pregunta del índice actual
   const questionElement = document.getElementById("question");
+  const answerElement = document.getElementById("answer");
+
   // Verificar si el índice está dentro del rango del array
   if (index < deck.length) {
     // Obtener la pregunta del elemento actualIndex del array deck
@@ -218,13 +211,26 @@ function updateQuestionText(index) {
     questionElement.innerHTML = question;
     const answerElement = document.getElementById("answer");
     answerElement.innerHTML = "";
+
+    if (index + 1 > deck.length) {
+      var elemento = document.getElementById("CorrectQuestion");
+      elemento.setAttribute("hidden", true);
+      elemento = document.getElementById("FailedQuestion");
+      elemento.setAttribute("hidden", true);
+      elemento = document.getElementById("NextQuestion");
+      elemento.setAttribute("hidden", true);
+    }
   } else {
+    var elemento = document.getElementById("CorrectQuestion");
+    elemento.setAttribute("hidden", true);
+    elemento = document.getElementById("FailedQuestion");
+    elemento.setAttribute("hidden", true);
+    elemento = document.getElementById("NextQuestion");
+    elemento.setAttribute("hidden", true);
     // Si el índice excede el rango del array, mostrar un mensaje
+    answerElement.innerHTML = "";
     questionElement.innerHTML = "No hay más preguntas disponibles";
   }
 }
 
-
-const finishedDeck = () => {
-    
-}
+const finishedDeck = () => {};
