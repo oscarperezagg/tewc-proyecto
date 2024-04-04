@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Geist-Regular";
   src: url("../fonts/Geist-Regular.woff") format("woff"), url("../fonts/Geist-Regular.woff2") format("woff2");
@@ -645,6 +646,7 @@ p {
 .degress_container .decks .deck-img {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 .degress_container .decks .deck-img img {
   width: 10em;
@@ -655,6 +657,45 @@ p {
   margin-top: 1em;
   align-self: center;
   margin-bottom: 10em;
+}
+.degress_container .decks .question_answer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.degress_container .decks .question_answer .card {
+  max-height: 10em;
+  border-radius: 1rem !important;
+  box-shadow: none;
+}
+.degress_container .decks .question_answer .card-body {
+  padding: 0.2em 0.5em;
+}
+.degress_container .decks .question_answer .card-body h6 {
+  font-family: "Geist-Bold", sans-serif; /* Usar la fuente 'Geist-Bold' */
+  font-size: 16px;
+  font-weight: lighter; /* Establecer el peso de la fuente como negrita */
+}
+.degress_container .decks .question_answer .aciertos {
+  align-self: center;
+  margin-bottom: 1em;
+}
+.degress_container .decks .question_answer .aciertos p {
+  margin: 0;
+  padding: 0;
+}
+.degress_container .decks .question_answer .deck_buttons {
+  justify-self: end;
+  display: flex;
+  gap: 1em;
+  align-items: end;
+  justify-content: center;
+  flex: 1; /* El div interno ocupará todo el espacio vertical disponible */
+}
+.degress_container .decks .question_answer .deck_buttons button {
+  text-align: center;
+  width: 8em;
+  border-radius: 3em;
 }
 
 .deck-img #tabla-carreras_wrapper {

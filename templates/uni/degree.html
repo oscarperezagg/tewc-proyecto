@@ -39,6 +39,33 @@
           <!-- Cuerpo de la tabla, se llenará con los datos del JSON -->
           <tbody></tbody>
         </table>
+        <div class="question_answer" hidden>
+          <div class="questions">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h6>Question</h6>
+                <p id="question"></p>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="card-body">
+                <h6>Answer</h6>
+                <p id="answer"></p>
+              </div>
+            </div>
+          </div>
+          <div class="aciertos">
+            <p>Aciertos: 0</p>
+          </div>
+          <div class="deck_buttons">
+            <button id="FailedQuestion" class="btn btn-outline-danger">
+              Failed
+            </button>
+            <button id="CorrectQuestion" class="btn btn-outline-success">
+              Correct
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
