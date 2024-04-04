@@ -28,7 +28,7 @@ df = pd.DataFrame()
 # Iterar sobre las tablas y asignar la columna "CURSO-ITINERARIO"
 for i, table in enumerate(tables):
     try:
-        df.index.name = 'CARRERA'
+        df.index.name = "CARRERA"
         df["universidad"] = "universidad_politécnica_de_madrid"
         df["decks_file"] = ""
         df = pd.concat([df, table], ignore_index=True)

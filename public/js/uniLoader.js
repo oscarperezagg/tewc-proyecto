@@ -172,7 +172,6 @@ const getSingleDregree = async (id) => {
     }
     // Convertir la respuesta a JSON
     const colleges = await response.json();
-    console.log(id, colleges);
 
     return colleges[id];
   } catch (error) {
@@ -185,10 +184,8 @@ const getSingleDregree = async (id) => {
 const loadDegree = async (id) => {
   // Obtenemos los detalles de colleges.json
   const degree = await getSingleDregree(id);
-  console.log(degree);
   // Obtenemos el nombre del archivo con los datos
   var formattedName = degree.nombre.toLowerCase().replace(/ /g, "_");
-  console.log(formattedName);
   const url = "modelos/carreras.json";
   let html = "";
   try {
@@ -199,16 +196,15 @@ const loadDegree = async (id) => {
     }
     // Convertir la respuesta a JSON
     const carreras = await response.json();
-    console.log("CARRERAS", carreras);
-    carreras.forEach((carrera, index) => {
+
+    carreras.slice(0, 5).forEach((carrera, index) => {
       if (carrera.universidad !== formattedName) return;
       html += `
-        <button type="button" class="btn">${carrera.carrera}</button>
+        <button type="button" class="btn carrera" id="${carrera.decks_file}" >${carrera.carrera}</button>
       `;
     });
   } catch (error) {
     // Manejar cualquier error que ocurra durante la carga del archivo JSON
-    console.error("Error:", error);
     html = "No data found - Try UPM";
   }
   if (html === "") {

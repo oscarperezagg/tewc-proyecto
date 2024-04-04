@@ -619,7 +619,7 @@ p {
   grid-template-columns: minmax(400px, 1fr) 5fr;
   gap: 2em;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .degress_container {
     display: flex;
     flex-direction: column;
@@ -630,6 +630,54 @@ p {
   min-height: 70vh;
   padding: 1em 0.8em;
 }
+@media (max-width: 1000px) {
+  .degress_container .card-body {
+    min-height: fit-content;
+  }
+}
 .degress_container button {
   text-align: left;
+}
+.degress_container .decks {
+  display: flex;
+  flex-direction: column;
+}
+.degress_container .decks .deck-img {
+  display: flex;
+  flex-direction: column;
+}
+.degress_container .decks .deck-img img {
+  width: 10em;
+  margin-top: 10em;
+  align-self: center;
+}
+.degress_container .decks .deck-img p {
+  margin-top: 1em;
+  align-self: center;
+  margin-bottom: 10em;
+}
+
+.deck-img #tabla-carreras_wrapper {
+  width: 100%;
+}
+.deck-img select,
+.deck-img input {
+  border-radius: 2em !important;
+}
+.deck-img .page-link {
+  color: linear-gradient(to bottom right, rgba(83, 143, 255, 0.8), rgb(43, 115, 248));
+}
+.deck-img .active .page-link {
+  background-image: linear-gradient(to bottom right, rgba(83, 143, 255, 0.8), rgb(43, 115, 248));
+}
+.deck-img .pagination li:first-child a {
+  border-radius: 2em 0 0 2em !important;
+}
+.deck-img .pagination li:last-child a {
+  border-radius: 0 2em 2em 0 !important;
+}
+.deck-img td {
+  font-family: "Geist-Light", sans-serif; /* Usar la fuente 'Geist-Bold' */
+  font-size: small;
+  font-weight: lighter; /* Establecer el peso de la fuente como negrita */
 }/*# sourceMappingURL=myBootstrap.css.map */

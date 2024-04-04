@@ -1,14 +1,45 @@
 <div class="degress_container">
   <div class="card mb-4 carreras">
     <div class="card-body">
-      <h4>Carreras</h4>
+      <h4>Degree</h4>
+      <p>Select a degree</p>
       {{{content}}}
     </div>
   </div>
   <div class="card mb-4">
     <div class="card-body decks">
       <h4>{{{name}}}</h4>
-      
+      <p class="" >Decks available:</p>
+
+      <!-- <div class="deck-img">
+      </div> -->
+      <div class="deck-img">
+        <img class="nothingFound" src="/public/img/expediente.png" alt="" />
+        <p class="nothingFound" hidden>No data found.</p>
+        <p id="notSelectedCarrera">Degree not selected</p>
+        <!-- Mensaje de carga -->
+        <div id="carga-mensaje" style="display: none">Cargando datos...</div>
+
+        <!-- Tabla de carreras -->
+        <table
+          id="tabla-carreras"
+          class="table table-striped table-responsive display"
+          hidden
+          style="width: 100%"
+        >
+          <!-- Encabezados de la tabla -->
+          <thead>
+            <tr>
+              <th>Asignatura</th>
+              <th>Curso-Itinerario</th>
+              <th>Nombre</th>
+            </tr>
+          </thead>
+
+          <!-- Cuerpo de la tabla, se llenará con los datos del JSON -->
+          <tbody></tbody>
+        </table>
+      </div>
     </div>
   </div>
 </div>

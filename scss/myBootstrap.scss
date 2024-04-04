@@ -654,7 +654,7 @@ p {
   grid-template-columns: minmax(400px, 1fr) 5fr;
   gap: 2em;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     display: flex;
     flex-direction: column;
   }
@@ -663,8 +663,72 @@ p {
     color: black;
     min-height: 70vh;
     padding: 1em 0.8em;
+    @media (max-width: 1000px) {
+      min-height: fit-content;
+    }
   }
   button {
     text-align: left;
+  }
+
+  .decks {
+    display: flex;
+    flex-direction: column;
+    .deck-img {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 10em;
+        margin-top: 10em;
+        align-self: center;
+      }
+      p {
+        margin-top: 1em;
+        align-self: center;
+        margin-bottom: 10em;
+      }
+    }
+  }
+}
+
+.deck-img {
+  #tabla-carreras_wrapper {
+    width: 100%;
+  }
+  select,
+  input {
+    border-radius: 2em !important;
+  }
+  .page-link {
+    color: $blue-gradient;
+    // background-color: orange;
+  }
+  .disabled {
+    .page-link {
+    }
+  }
+  .active {
+    .page-link {
+      background-image: $blue-gradient;
+    }
+  }
+
+  .pagination {
+    li:first-child {
+      a {
+        border-radius: 2em 0 0 2em !important;
+      }
+    }
+    li:last-child {
+      a {
+        border-radius: 0 2em 2em 0 !important;
+      }
+    }
+  }
+
+  td {
+    font-family: "Geist-Light", sans-serif; /* Usar la fuente 'Geist-Bold' */
+    font-size: small;
+    font-weight: lighter; /* Establecer el peso de la fuente como negrita */
   }
 }
