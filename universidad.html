@@ -178,6 +178,7 @@
           // Verificar si el ID del botón contiene ".json"
           if (id && id.includes(".json")) {
             $("#notSelectedCarrera").attr("hidden", "hidden");
+            $("#title_deck").attr("hidden", "hidden");
 
             // Obtener el id del botón
             var id = $(this).attr("id");
@@ -219,6 +220,7 @@
             });
           } else if (classes && classes.includes("carrera")) {
             $("#notSelectedCarrera").attr("hidden", "hidden");
+            $("#title_deck").attr("hidden", "hidden");
 
             // Referencia a la tabla DataTable
             var tabla = $("#tabla-carreras").DataTable();
@@ -238,13 +240,36 @@
         var elemento = event.target;
 
         // Verificar si el elemento es un <td> o tiene un padre <td>
-        var tdCercano = elemento.closest("tr");
-        if (tdCercano) {
-          var idTdCercano = tdCercano.id;
+        var trCercano = elemento.closest("tr");
+        if (trCercano) {
+          var idtrCercano = trCercano.id;
           console.log(
             "Haz hecho clic en un elemento <td> con el id:",
-            idTdCercano
+            idtrCercano
           );
+
+          // Destruir la tabla
+          var tabla = $("#tabla-carreras").DataTable();
+          if (tabla !== undefined && tabla !== null) {
+            tabla.destroy();
+          }
+
+          // Ocultar elementos
+          $("#notSelectedCarrera").attr("hidden", "hidden");
+          $(".nothingFound").attr("hidden", "hidden");
+          $("#tabla-carreras").attr("hidden", "hidden");
+
+          // Obtener el contenido de la tercera columna del <tr> (índice 2)
+          var contenidoTerceraColumna = trCercano.cells[2].innerHTML;
+          console.log(
+            "Contenido de la tercera columna:",
+            contenidoTerceraColumna
+          );
+
+          // Añadir el contenido de la tercera columna al elemento <p> con la clase "title_deck"
+          var tituloDeck = document.getElementById("title_deck");
+          tituloDeck.textContent = contenidoTerceraColumna;
+          $("#title_deck").removeAttr("hidden");
         } else {
           console.log("Haz hecho clic en otro lugar");
         }
