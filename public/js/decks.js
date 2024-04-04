@@ -223,3 +223,8 @@ function updateQuestionText(index) {
     questionElement.innerHTML = "No hay más preguntas disponibles";
   }
 }
+
+
+const finishedDeck = () => {
+    
+}
