@@ -1,6 +1,7 @@
 @import "fonts";
 // Variables
 $box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+$better-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 $blue-shadow: 2px 2px 6px rgb(43, 115, 248, 0.3);
 $box-shift-shadow: 4px 0 3px rgba(0, 0, 0, 0.4);
 $blue-gradient: linear-gradient(
@@ -59,6 +60,10 @@ p {
 // Estilos para el contenido del carrusel
 .carousel-inner {
   max-height: 30em;
+}
+
+.card {
+  box-shadow: $better-box-shadow;
 }
 
 // Estilos para la navegación redondeada
@@ -562,8 +567,11 @@ p {
       order: 2;
     }
   }
+
   .card {
     height: 40em;
+    box-shadow: $blue-shadow;
+
     background-image: $blue-gradient;
     .card-body {
       display: flex;
@@ -619,7 +627,7 @@ p {
 
   .config {
     background-image: none;
-
+    box-shadow: $better-box-shadow;
     .card-body {
       color: black;
       display: flex;

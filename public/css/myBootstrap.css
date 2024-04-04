@@ -65,6 +65,10 @@ p {
   max-height: 30em;
 }
 
+.card {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 .rounded-nav {
   padding-left: 0.8em;
   margin: 0 2em;
@@ -525,6 +529,7 @@ p {
 }
 .pomodoro .card {
   height: 40em;
+  box-shadow: 2px 2px 6px rgba(43, 115, 248, 0.3);
   background-image: linear-gradient(to bottom right, rgba(83, 143, 255, 0.8), rgb(43, 115, 248));
 }
 .pomodoro .card .card-body {
@@ -589,6 +594,7 @@ p {
 }
 .pomodoro .config {
   background-image: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .pomodoro .config .card-body {
   color: black;
