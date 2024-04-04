@@ -55,6 +55,29 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const deck = (id) => {
+  if (sessionStorage.getItem("deck")) {
+    sessionStorage.removeItem("deck");
+    console.log('Variable "deck" eliminada de sessionStorage');
+  }
+
+  // Elimina la variable 'actualIndex' del sessionStorage si existe
+  if (sessionStorage.getItem("actualIndex")) {
+    sessionStorage.removeItem("actualIndex");
+    console.log('Variable "actualIndex" eliminada de sessionStorage');
+  }
+
+  // Elimina la variable 'actualIndex' del sessionStorage si existe
+  if (sessionStorage.getItem("correctAnswers")) {
+    sessionStorage.removeItem("correctAnswers");
+    console.log('Variable "correctAnswers" eliminada de sessionStorage');
+  }
+
+  var elemento = document.getElementById("FailedQuestion");
+  elemento.removeAttribute("hidden");
+  var elemento = document.getElementById("CorrectQuestion");
+  elemento.removeAttribute("hidden");
+  elemento = document.getElementById("NextQuestion");
+  elemento.setAttribute("hidden", true);
   // URL del archivo JSON
   const url = `modelos/decks/${id}`;
 
@@ -149,7 +172,7 @@ document.addEventListener("click", function (event) {
     // Actualizar el texto de la respuesta y pregunta en el HTML
     updateAnswerText(currentIndex);
   } else if (id && id == "NextQuestion") {
-    var elemento = document.getElementById("CorrectQuestion");
+    var elemento = document.getElementById("FailedQuestion");
     elemento.removeAttribute("hidden");
     var elemento = document.getElementById("CorrectQuestion");
     elemento.removeAttribute("hidden");
