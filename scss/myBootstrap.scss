@@ -704,7 +704,7 @@ p {
         padding: 0.2em 0.5em;
         h6 {
           font-family: "Geist-Bold", sans-serif; /* Usar la fuente 'Geist-Bold' */
-          font-size:16px;
+          font-size: 16px;
           font-weight: lighter; /* Establecer el peso de la fuente como negrita */
         }
       }
@@ -774,5 +774,57 @@ p {
     font-family: "Geist-Light", sans-serif; /* Usar la fuente 'Geist-Bold' */
     font-size: small;
     font-weight: lighter; /* Establecer el peso de la fuente como negrita */
+  }
+}
+
+.articleRight {
+  display: grid;
+  grid-template-columns: 1fr 1fr; // Dos columnas con igual ancho
+  height: 40em;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr; // Dos columnas con igual ancho
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 1em 3em;
+    @media (max-width: 526px) {
+      padding: 1em 1em;
+    }
+    h1 {
+      margin-bottom: 0.3em;
+    }
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card {
+      max-width: 35em;
+      padding: 0 !important;
+      margin: 0 !important;
+      overflow: hidden;
+
+      @media (max-width: 900px) {
+        max-width: 30em;
+      }
+      .card-body {
+        padding: 0;
+        margin: 0;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.fullArticle {
+  padding: 1em 3em;
+  @media (max-width: 526px) {
+    padding: 1em 1em;
   }
 }

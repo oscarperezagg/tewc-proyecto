@@ -721,4 +721,61 @@ p {
   font-family: "Geist-Light", sans-serif; /* Usar la fuente 'Geist-Bold' */
   font-size: small;
   font-weight: lighter; /* Establecer el peso de la fuente como negrita */
+}
+
+.articleRight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 40em;
+}
+@media (max-width: 1100px) {
+  .articleRight {
+    grid-template-columns: 1fr;
+  }
+}
+.articleRight .left {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 1em 3em;
+}
+@media (max-width: 526px) {
+  .articleRight .left {
+    padding: 1em 1em;
+  }
+}
+.articleRight .left h1 {
+  margin-bottom: 0.3em;
+}
+.articleRight .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.articleRight .right .card {
+  max-width: 35em;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden;
+}
+@media (max-width: 900px) {
+  .articleRight .right .card {
+    max-width: 30em;
+  }
+}
+.articleRight .right .card .card-body {
+  padding: 0;
+  margin: 0;
+}
+.articleRight .right .card .card-body img {
+  width: 100%;
+}
+
+.fullArticle {
+  padding: 1em 3em;
+}
+@media (max-width: 526px) {
+  .fullArticle {
+    padding: 1em 1em;
+  }
 }/*# sourceMappingURL=myBootstrap.css.map */
