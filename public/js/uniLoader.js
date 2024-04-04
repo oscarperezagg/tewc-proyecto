@@ -215,3 +215,5 @@ const loadDegree = async (id) => {
     name: degree.nombre,
   });
 };
+
+

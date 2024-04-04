@@ -661,7 +661,6 @@ p {
   // Estilos para las tarjetas
   .card-body {
     color: black;
-    min-height: 70vh;
     padding: 1em 0.8em;
     @media (max-width: 1000px) {
       min-height: fit-content;
@@ -695,11 +694,13 @@ p {
       flex-direction: column;
 
       .card {
-        max-height: 10em;
+        height: fit-content;
+
         border-radius: 1rem !important;
         box-shadow: none;
       }
       .card-body {
+        max-height: 10em;
         padding: 0.2em 0.5em;
         h6 {
           font-family: "Geist-Bold", sans-serif; /* Usar la fuente 'Geist-Bold' */

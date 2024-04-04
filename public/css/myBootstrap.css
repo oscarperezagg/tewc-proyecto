@@ -628,7 +628,6 @@ p {
 }
 .degress_container .card-body {
   color: black;
-  min-height: 70vh;
   padding: 1em 0.8em;
 }
 @media (max-width: 1000px) {
@@ -664,11 +663,12 @@ p {
   flex-direction: column;
 }
 .degress_container .decks .question_answer .card {
-  max-height: 10em;
+  height: fit-content;
   border-radius: 1rem !important;
   box-shadow: none;
 }
 .degress_container .decks .question_answer .card-body {
+  max-height: 10em;
   padding: 0.2em 0.5em;
 }
 .degress_container .decks .question_answer .card-body h6 {

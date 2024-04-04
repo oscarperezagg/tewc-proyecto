@@ -179,6 +179,7 @@
           if (id && id.includes(".json")) {
             $("#notSelectedCarrera").attr("hidden", "hidden");
             $("#title_deck").attr("hidden", "hidden");
+            $(".question_answer").attr("hidden", "hidden");
 
             // Obtener el id del botón
             var id = $(this).attr("id");
@@ -221,6 +222,7 @@
           } else if (classes && classes.includes("carrera")) {
             $("#notSelectedCarrera").attr("hidden", "hidden");
             $("#title_deck").attr("hidden", "hidden");
+            $(".question_answer").attr("hidden", "hidden");
 
             // Referencia a la tabla DataTable
             var tabla = $("#tabla-carreras").DataTable();
@@ -235,47 +237,7 @@
         });
       });
     </script>
-    <script>
-      document.addEventListener("click", function (event) {
-        var elemento = event.target;
 
-        // Verificar si el elemento es un <td> o tiene un padre <td>
-        var trCercano = elemento.closest("tr");
-        if (trCercano) {
-          var idtrCercano = trCercano.id;
-          console.log(
-            "Haz hecho clic en un elemento <td> con el id:",
-            idtrCercano
-          );
-
-          // Destruir la tabla
-          var tabla = $("#tabla-carreras").DataTable();
-          if (tabla !== undefined && tabla !== null) {
-            tabla.destroy();
-          }
-
-          // Ocultar elementos
-          $("#notSelectedCarrera").attr("hidden", "hidden");
-          $(".nothingFound").attr("hidden", "hidden");
-          $("#tabla-carreras").attr("hidden", "hidden");
-
-          // Obtener el contenido de la tercera columna del <tr> (índice 2)
-          var contenidoTerceraColumna = trCercano.cells[2].innerHTML;
-          console.log(
-            "Contenido de la tercera columna:",
-            contenidoTerceraColumna
-          );
-
-          // Añadir el contenido de la tercera columna al elemento <p> con la clase "title_deck"
-          var tituloDeck = document.getElementById("title_deck");
-          tituloDeck.textContent = contenidoTerceraColumna;
-          $("#title_deck").removeAttr("hidden");
-          $(".question_answer").removeAttr("hidden");
-        } else {
-          console.log("Haz hecho clic en otro lugar");
-        }
-      });
-    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -284,5 +246,7 @@
     <!-- Load library from the CDN -->
     <script src="/public/js/main.js"></script>
     <script src="/public/js/uniLoader.js"></script>
+    <script src="/public/js/decks.js"></script>
+
   </body>
 </html>
