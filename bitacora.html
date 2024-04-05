@@ -11,6 +11,7 @@
     <!-- Color de tema -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#4484FC" />
     <!-- Color de la barra de estado en iOS -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"></script>
   </head>
   <body>
     <!-- Modal -->
@@ -196,7 +197,119 @@
           </p>
         </div>
 
+        <div class="right-img">
+          <div class="card">
+            <div class="card-body">
+              <img src="/public/img/learnhubbanner.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="articleRight">
+        <div class="left">
+          <h2>Definición del proyecto</h2>
+          <p>
+            LearnHub es una innovadora plataforma web diseñada para revolucionar
+            la forma en que aprendemos y compartimos conocimiento.
+          </p>
+
+          <p>
+            La plataforma se destaca por su enfoque en herramientas de
+            aprendizaje interactivas y colaborativas, como el aprendizaje por
+            tarjetas y el método Pomodoro.
+          </p>
+
+          <p>
+            Además, ofrece pruebas de código para mejorar las habilidades de
+            programación en un entorno desafiante y educativo.
+          </p>
+
+          <p>
+            Lo más distintivo de LearnHub es su visión de crear una comunidad
+            vibrante y participativa que cubra una amplia gama de temas, desde
+            exámenes universitarios hasta ciencia de datos.
+          </p>
+        </div>
         <div class="right">
+          <h2>Objetivos del MVP</h2>
+          <p>
+            LearnHub es un innovador espacio web que busca revolucionar el
+            aprendizaje colaborativo. En su versión MVP (Producto Mínimo
+            Viable), ofrece un repositorio centralizado de recursos educativos,
+            facilita el aprendizaje mediante tarjetas interactivas, e introduce
+            herramientas como el método Pomodoro para optimizar el tiempo de
+            estudio. Además, promueve una comunidad activa donde usuarios pueden
+            compartir y descubrir materiales educativos sobre una variedad de
+            temas. Con LearnHub, estamos poniendo las bases para una plataforma
+            de aprendizaje inclusiva, interactiva y en constante evolución.
+          </p>
+
+          <p>
+            En conclusión, el MVP de LearnHub se enfoca en asentar las bases de
+            un ecosistema diseñado para compartir recursos educativos,
+            implementando herramientas como el aprendizaje mediante tarjetas y
+            la técnica Pomodoro.
+          </p>
+        </div>
+      </div>
+      <div class="fullSide">
+        <h4>Hoja de ruta</h4>
+        <p>
+          La sección "Hoja de Ruta y Distribución del MVP" desglosa nuestra
+          estrategia para evolucionar LearnHub desde su concepción inicial hasta
+          alcanzar nuestra ambiciosa visión a largo plazo. Aquí, delineamos las
+          fases clave del proyecto, detallando cómo cada elemento del MVP será
+          desarrollado y mejorado a lo largo del tiempo.
+        </p>
+        <div class="mermaid-center">
+          <pre class="mermaid">
+ 
+            graph LR
+            A[Fase 1 - Planificación de la web] --> A1{Detalles adicionales:
+                - Definición de MVP
+                -}
+            A1 --> B[Fase 2 - Web estática]
+            B --> B1{Página estática sin base de datos
+                - Funcionalidad Tarjetas
+                - Funcionalidad Pomodoro
+                - Todas las vistas}
+            B --> C[Fase 3 - Proyecto web PHP y BBDD]
+            C --> C1{MVP & base de datos
+                - Implementar BackEnd
+                - Funcionalidad de Tarjetas con BBDD
+                - Funcionalidad Pomodoro con BBDD
+                - Funcionalidad de usuarios
+                - Funcionalidad de compartir}
+        
+        
+        </pre
+          >
+        </div>
+      </div>
+
+      <div class="articleRight">
+        <div class="left">
+          <h1>Desarrollo</h1>
+          <p>
+            En nuestra exploración del desarrollo de LearnHub, optamos por una
+            metodología transparente y detallada. Para explicar la
+            implementación, nos basamos en el grafo de commits de nuestro
+            repositorio en GitHub. Este enfoque nos permite desglosar cada
+            cambio, desde adiciones de características hasta correcciones de
+            errores, proporcionando una comprensión completa de la evolución del
+            proyecto.
+          </p>
+
+          <p>
+            A través de este método, nos comprometemos a ofrecer una visión
+            clara y transparente de cada paso dado en el desarrollo de LearnHub.
+            Acompáñanos mientras navegamos a través del grafo de commits,
+            analizando meticulosamente cada cambio y compartiendo los detalles
+            detrás de nuestra implementación.
+          </p>
+        </div>
+
+        <div class="right-img">
           <div class="card">
             <div class="card-body">
               <img src="/public/img/commit.png" alt="" />
@@ -204,8 +317,260 @@
           </div>
         </div>
       </div>
-      <div class="fullArticle">
-        <h2>Fase 1: Definición de MVP</h2>
+
+      <div class="articleLeft">
+        <div class="right-img">
+          <div class="card landing">
+            <div class="card-body">
+              <img src="/public/img/landing.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="left">
+          <h2>Primeros commits</h2>
+          <p>
+            En los primeros commits, que incluyen "Basic FrontEnd + index.html"
+            y "Home Page - Responsive - Last sections", se llevaron a cabo una
+            serie de tareas fundamentales para establecer las bases de LearnHub.
+          </p>
+
+          <p>
+            En primer lugar, se diseñó y desarrolló la barra de búsqueda,
+            proporcionando a los usuarios una manera intuitiva de buscar
+            contenido. Además, se implementó la página de bienvenida, la cual se
+            dividió en cuatro secciones distintas, y se garantizó su
+            funcionalidad en dispositivos de diferentes tamaños gracias al
+            diseño responsive, tanto en la barra de navegación como en la página
+            de inicio.
+          </p>
+
+          <p>
+            Asimismo, se introdujo una funcionalidad de autenticación
+            provisional, que permite a los usuarios realizar un inicio de sesión
+            utilizando un formulario simple. Utilizando el almacenamiento local
+            (localStorage), se guarda la información del usuario registrado. Es
+            importante señalar que esta autenticación es temporal y no está
+            respaldada por un backend; sin embargo, se incorporó para añadir una
+            capa adicional de interactividad. Además, se implementó la opción de
+            cerrar sesión (logout) con un botón correspondiente. En todo
+            momento, se muestra el nombre de usuario en la interfaz, permitiendo
+            una experiencia más personalizada.
+          </p>
+
+          <p>
+            En resumen, estos primeros pasos sentaron las bases esenciales para
+            el desarrollo de LearnHub: se estableció la estructura básica del
+            sitio web, se garantizó su adaptabilidad a diferentes dispositivos
+            mediante el diseño responsive, se creó una página de inicio
+            atractiva y se introdujo una funcionalidad provisional de inicio de
+            sesión y cierre de sesión.
+          </p>
+          <p>
+            Las tecnologías utilizadas hasta el momento son simples: HTML, CSS y
+            JS. En particular, he empleado una biblioteca que me ha cautivado
+            por completo desde hace varios meses, llamada TypeJS. Esta
+            biblioteca permite crear efectos donde los textos se escriben
+            progresivamente, como se puede apreciar en la página de inicio al
+            cargarla.
+          </p>
+        </div>
+      </div>
+
+      <div class="articleRight">
+        <div class="left">
+          <h2>Requests</h2>
+          <p>
+            Los siguientes commits, "Table V1", "New request (Fake)", "bug",
+            "Color badges", "Bugs" y "Bugs", se centran en la creación de la
+            página de solicitud (request), la cual está diseñada para permitir a
+            los usuarios realizar solicitudes a los administradores del sitio
+            web para agregar funcionalidades adicionales o contenido adicional.
+          </p>
+
+          <p>
+            En teoría, esta página debería proporcionar una plataforma para que
+            los usuarios puedan enviar solicitudes de mejoras o nuevas
+            características. En estos commits, hemos desarrollado una página que
+            incluye una tabla con datos generados aleatoriamente, que simulan
+            las solicitudes de los usuarios, y un formulario que permite agregar
+            nuevas solicitudes.
+          </p>
+
+          <p>
+            Es importante destacar que estas solicitudes son "persistentes"
+            temporalmente gracias al uso de localStorage. Esto significa que las
+            solicitudes pueden ser creadas y luego visualizadas en la tabla,
+            incluso después de recargar la página.
+          </p>
+        </div>
+        <div class="right-img">
+          <div class="card landing">
+            <div class="card-body">
+              <img class="" src="/public/img/requests.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fullSide">
+        <div class="left">
+          <h2 style="text-align: left">Universidad & Certificaciones</h2>
+          <p>
+            En la página de Uni & Cert V1, se realizó la creación de las
+            secciones de universidades y certificaciones. En la primera sección,
+            se recopilan todas las universidades (por el momento, solo se han
+            agregado las universidades de Madrid). Mientras que en la segunda
+            sección, se enumeran todas las instituciones reconocidas que ofrecen
+            certificaciones, como Google o IBM.
+          </p>
+
+          <p>
+            En ambas secciones, se llevó a cabo un proceso de investigación que
+            incluyó la creación de mockups de información. Posteriormente, se
+            procedió a desarrollar las páginas web utilizando HTML, JS y CSS. Se
+            hizo un uso significativo de JS para simular funcionalidades
+            realistas, dado que no se contaba con un backend.
+          </p>
+        </div>
+        <div class="right-img twoimage">
+          <div class="card landing">
+            <div class="card-body">
+              <img src="/public/img/unipage.png" alt="" />
+            </div>
+          </div>
+          <div class="card landing">
+            <div class="card-body">
+              <img src="/public/img/certpage.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="articleRight">
+        <div class="left">
+          <h2>Pomodoro</h2>
+          <p>
+            Los siguientes commits, desde "Pomodoro V1" hasta "shadow", son los
+            que me han permitido implementar la funcionalidad del Pomodoro, una
+            técnica que me ayuda a concentrarme durante unos minutos,
+            normalmente 25, seguidos de un descanso de 5 minutos, y así
+            sucesivamente. Esta implementación la realicé completamente en
+            JavaScript.
+          </p>
+
+          <p>
+            En un principio, pensé que sería una tarea sencilla, pero el número
+            de commits necesarios revela que no fue tan fácil como esperaba.
+            Inicialmente, creé una versión que no era configurable, es decir,
+            usaba los tiempos por defecto. El Pomodoro funcionaba correctamente,
+            excepto por el hecho de que los navegadores pausaban el hilo
+            principal cuando salía de la pestaña, lo cual se debía a la lógica
+            de crear el temporizador esperando un segundo.
+          </p>
+
+          <p>
+            Para solucionar este problema, investigué opciones para ejecutar
+            hilos paralelos y opté por utilizar web workers. Sin embargo, surgió
+            un problema con esta opción: los hilos paralelos obtienen menos
+            prioridad si estamos en otras páginas, lo que provocaba desfases en
+            el temporizador. Finalmente, me basé en la forma en que se calcula
+            el tiempo en las redes telemáticas, donde se utiliza la diferencia
+            entre dos fechas en lugar de un temporizador segundo a segundo.
+          </p>
+
+          <p>
+            De esta manera, logré que el hilo continuara funcionando incluso si
+            cambiaba de pestaña, y el tiempo se mantenía preciso, ya que
+            cualquier ralentización se ajustaría cuando volviera a la página
+            activa. Además, implementé la posibilidad de modificar las rondas,
+            el tiempo de enfoque y el tiempo de descanso, todo ello gracias a
+            JavaScript y al uso del localStorage. Ha sido una tarea realmente
+            interesante y he aprendido mucho sobre los web workers.
+          </p>
+        </div>
+        <div class="right-img">
+          <div class="card landing">
+            <div class="card-body">
+              <img src="/public/img/pomodoro.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="articleLeft">
+        <div class="right-img">
+          <div class="card landing gift">
+            <div class="card-body">
+              <video autoplay muted loop>
+                <source src="/public/img/howto.mov" />
+                Tu navegador no admite la reproducción de videos HTML5.
+              </video>
+            </div>
+          </div>
+        </div>
+        <div class="left">
+          <h2>Decks (Tomos de tarjetas)</h2>
+          <p>
+            Otra de las tareas que más quebraderos de cabeza me ha dado abarca
+            los commits desde "Deck Alva (carrera Vista)" hasta "Bugs del
+            final", justo antes del commit "Deck V1". Esta funcionalidad busca
+            darle utilidad a la pestaña de universidad y certificación, aunque
+            solo se haya desarrollado sobre la página de universidad
+            (university).
+          </p>
+
+          <p>
+            La funcionalidad de decks permite estudiar mediante tarjetas, es
+            decir, por ejemplo, una asignatura de la ETSIT tiene un grupo de
+            tarjetas que nos permiten estudiar sobre un tema. Por lo tanto, la
+            funcionalidad consistía en añadir a la página de universidad la
+            posibilidad de acceder a las tarjetas disponibles para la carrera de
+            telecomunicaciones de la Universidad Politécnica de Madrid y poder
+            estudiarlas.
+          </p>
+
+          <p>
+            Es importante notar que dado que no tenemos backend, ha sido
+            complicado hacer una prueba de concepto, y es por esto que solo se
+            pueden crear tarjetas de la Universidad Politécnica de Madrid y de
+            la ETSIT.
+          </p>
+
+          <p>
+            Para lograr esto, una vez más he utilizado JavaScript, localStorage
+            y sessionStorage. La funcionalidad se puede probar de manera muy
+            sencilla. El flujo es: University > Politécnica de Madrid > Elegir
+            el grado de Telecomunicaciones > Pulsar la primera fila de la tabla
+            (la única) > Estudiar.
+          </p>
+
+          <p>
+            Estoy ansioso por implementar el backend para darle una
+            funcionalidad real. Aunque la tarea ha sido más sencilla que el
+            Pomodoro, ha llevado su tiempo.
+          </p>
+        </div>
+      </div>
+      <div class="fullSide">
+        <div class="left">
+          <h2 style="text-align: left">Conclusion</h2>
+          <p>
+            En resumen, considero que este proyecto tiene un gran potencial. El
+            objetivo fundamental es crear un repositorio donde aquellos que
+            deseen seguir el camino tradicional de estudios y trabajo encuentren
+            un lugar donde puedan acceder a una amplia gama de recursos para
+            destacar en este trayecto.
+          </p>
+
+          <p>
+            Las funcionalidades presentes tienen un amplio margen de mejora, y
+            es evidente que esta solución de software requiere la implementación
+            de un backend, así como una extensa investigación y una fuerte
+            inversión en SEO y marketing para ganar reconocimiento. Espero que
+            la página web sea de tu agrado y que, si encuentras utilidad en
+            ella, te pongas en contacto conmigo en oscaperez.agg@gmail.com si
+            deseas involucrarte y llevar este proyecto adelante con mayor
+            seriedad.
+          </p>
+        </div>
       </div>
     </div>
 
